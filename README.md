@@ -1,32 +1,44 @@
 # WebSocket Streams for BitoPro
 
-- [WebSocket Streams for BitoPro](#WebSocket-Streams-for-BitoPro)
-  - [General WebSocket Information](#General-WebSocket-Information)
-  - [Detailed Stream Information](#Detailed-Stream-Information)
-    - [Order Book](#Order-Book)
-    - [Ticker](#Ticker)
-    - [Trade](#Trade)
+- [WebSocket Streams for BitoPro](#websocket-streams-for-bitopro)
+  - [Changelog](#changelog)
+  - [General WebSocket Information](#general-websocket-information)
+  - [Detailed Stream Information](#detailed-stream-information)
+    - [Order Book](#order-book)
+    - [Ticker](#ticker)
+    - [Trade](#trade)
+
+## Changelog
+
+| Date       | Version | Description                                                                                                                                                    |
+| ---------- | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 2019/08/20 | 2.0.0   | 1. Add `limit` and `scale` to order book response. <br> 2. Order book endpoint can receive specify message to adjust the scale, but just increase or decrease. |
+| 2019/07/09 | 1.0.0   | In the beginning BitoPro released the websocket API.                                                                                                           |
 
 ## General WebSocket Information
 
 * The base endpoint is: **wss://stream.bitopro.com:9443/ws**.
-* Streams can be access either in `single pair` or `combinded pairs`.
+* Streams can be access either in `single pair` or `combined pairs`.
 * All pairs for streams are **uppercase** and with **underscore** between base and quote.
-* The websocket server will send a `ping frame` every 20 seconds. If the websocket server doesn't receive a `pong frame` back from the client within a 5 seconds period, the connection will be disconnected.
+* The websocket server will send a `ping frame` every 20 seconds. If the websocket server doesn't receive a `pong frame` back from the client within a 10 seconds period, the connection will be disconnected.
 * We'll always push the `latest` data when you successfully get the websocket connection.
 
 ## Detailed Stream Information
 
 ### Order Book
 
-Order book pushed all data every second when updated. You can specifiy one or more pairs and the default limit is 5. Valid limit values are **1**, **5**, **10** or **20**.
+Order book pushed all data when updated. You can specifiy one or more pairs and the default limit is 5. Valid limit values are **1**, **5**, **10** or **20**. it can receive specify message to adjust the scale, but just increase or decrease. We'll push data by specify scale. If the `scale` out of valid range, there are nothing to happen.
+
+* Allow Messages（JSON format）：
+  * `{"pair": "{BASE_QUOTE}", "param": "SCALE", "action": "+"}`：Increase the `BASE_QUOTE` pair's scale
+  * `{"pair": "{BASE_QUOTE}", "param": "SCALE", "action": "-"}`：Decrease the `BASE_QUOTE` pair's scale
 
 * Request
 
-| Path | Query | Type   | Description                                                                                                          |
-| ---- | ----- | ------ | -------------------------------------------------------------------------------------------------------------------- |
+| Path | Query | Type   | Description                                                                                              |
+| ---- | ----- | ------ | -------------------------------------------------------------------------------------------------------- |
 | pair |       | string | Uppercase string literal of a pair, you can optionally a colon with limit. e.g. `BTC_TWD` or `BTC_TWD:5` |
-|      | pairs | string | The same with `pair`, multi pairs are comma-delimited. e.g. `BTC_TWD:1,ETH_TWD:20,BITO_ETH`                          |
+|      | pairs | string | The same with `pair`, multi pairs are comma-delimited. e.g. `BTC_TWD:1,ETH_TWD:20,BITO_ETH`              |
 
 * Response
 
@@ -34,6 +46,8 @@ Order book pushed all data every second when updated. You can specifiy one or mo
 | --- | --------- | ------------ | --------------------------------------------------------------------- |
 | 0   | event     | string       | String literal for event name                                         |
 | 0   | pair      | string       | Uppercase string underscore-delimited literal of a pair of currencies |
+| 0   | limit     | integer      |                                                                       |
+| 0   | scale     | integer      |                                                                       |
 | 0   | bids      | object array |                                                                       |
 | 0   | asks      | object array |                                                                       |
 | 0   | timestamp | long integer | Unix Timestamp in milliseconds (seconds * 1000)                       |
@@ -56,6 +70,8 @@ GET wss://stream.bitopro.com:9443/ws/v1/pub/order-books/BTC_TWD
 {
     "event": "ORDER_BOOK",
     "pair": "BTC_TWD",
+    "limit": "20",
+    "scale": "0",
     "bids": [
         {
             "price": "1",
@@ -92,6 +108,8 @@ GET wss://stream.bitopro.com:9443/ws/v1/pub/order-books?pairs=BTC_TWD,ETH_TWD
 {
     "event": "ORDER_BOOK",
     "pair": "BTC_TWD",
+    "limit": "5",
+    "scale": "0",
     "bids": [
         {
             "price": "1",
@@ -117,6 +135,8 @@ GET wss://stream.bitopro.com:9443/ws/v1/pub/order-books?pairs=BTC_TWD,ETH_TWD
 {
     "event": "ORDER_BOOK",
     "pair": "ETH_TWD",
+    "limit": "5",
+    "scale": "0",
     "bids": [
         {
             "price": "1",
