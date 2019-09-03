@@ -25,11 +25,11 @@
 
 ```js
 {
+  "orderId": 1234567890,
   "action": "BUY",
   "amount": "250",
   "price": "0.000075",
-  "timestamp": 1504262258000,
-  "type": "LIMIT"
+  "timestamp": 1504262258000
 }
 ```
 

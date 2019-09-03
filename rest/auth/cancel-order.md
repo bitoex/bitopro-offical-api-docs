@@ -1,4 +1,4 @@
-# Create an order
+# Cancel an order
 
 ### `DELETE` /orders/{pair}/{orderId}
 
