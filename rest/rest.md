@@ -54,6 +54,7 @@
 | [Get ticker](open/ticker.md)                             | `GET` /ticker/{pair}              | https://api.bitopro.com/v2/ticker/bito_twd            |
 | [Get tickers](open/tickers.md)                           | `GET` /tickers/{pair}             | https://api.bitopro.com/v2/tickers                    |
 | [Get the recent trades](open/trades.md)                  | `GET` /trades/{pair}              | https://api.bitopro.com/v2/trades/bito_twd            |
+| [Get trading history](open/trading-history.md)           | `GET` /trading-history/{pair}     | https://api.bitopro.com/v2/trading-history/btc_twd?resolution=1w&from=1550822974&to=1566375034 |
 
 ### `Auth`
 
