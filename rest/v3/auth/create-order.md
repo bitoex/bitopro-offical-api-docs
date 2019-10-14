@@ -20,8 +20,8 @@
 | price     | string  | Yes      | The price of the order for the trading pair.                                                                                 |
 | timestamp | integer | Yes      | The client timestamp in millisecond.                                                                                         |
 | type      | string  | Yes      | The order type, should only be `LIMIT`, `MARKET` or `STOP_LIMIT`.                                                            |
-| stopPrice | string  | No      | The price to trigger stop limit order, only required when `type` is `STOP_LIMIT`.                                             |
-| condition | string  | No      | The condition to match stop price, only required when `type` is `STOP_LIMIT`. Can only be `>=` or `<=`.                       |
+| stopPrice | string  | No      | The price to trigger stop limit order, **only required** when `type` is `STOP_LIMIT`.                                             |
+| condition | string  | No      | The condition to match stop price, **only required** when `type` is `STOP_LIMIT`. Can only be `>=` or `<=`.                       |
 
 ### Response sample
 

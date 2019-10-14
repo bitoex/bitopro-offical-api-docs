@@ -30,11 +30,12 @@
 
 ## Order status
 
-* `0`: In progress
-* `1`: In progress (Partial deal)
-* `2`: Completed
-* `3`: Completed (Partial deal)
-* `4`: Cancelled
+* `-1`: Not Triggered
+* `0`:  In progress
+* `1`:  In progress (Partial deal)
+* `2`:  Completed
+* `3`:  Completed (Partial deal)
+* `4`:  Cancelled
 
 ## Fee fields
 
