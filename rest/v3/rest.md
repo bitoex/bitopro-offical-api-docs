@@ -65,4 +65,6 @@
 | [Get order list](auth/order-list.md)               | `GET` /orders/{pair}           | https://api.bitopro.com/v3/orders/bito_twd           |
 | [Create an order](auth/create-order.md)            | `POST` /orders/{pair}          | https://api.bitopro.com/v3/orders/bito_twd           |
 | [Cancel an order](auth/cancel-order.md)            | `DELETE` /orders/{pair}/{id}   | https://api.bitopro.com/v3/orders/bito_twd/123456789 |
+| [Cancel all orders](auth/cancel-all.md)            | `DELETE` /orders/all or /orders/{pair}  | https://api.bitopro.com/v3/orders/all or https://api.bitopro.com/v3/orders/btc_usdt |
+| [Cancel multiple orders](auth/cancel-batch.md)            | `PUT` /orders   | https://api.bitopro.com/v3/orders |
 | [Get an order](auth/get-order.md)                  | `GET` /orders/{pair}/{orderId} | https://api.bitopro.com/v3/orders/bito_twd/123456789 |
