@@ -12,7 +12,7 @@
 
 #### For all endpoints require authentication, you should create the API key at [BitoPro](https://www.bitopro.com/api)
 
-## [Authentication](authentication.md)
+## [Authentication](authentication.md) 
 
 ## HTTP Status Codes
 
