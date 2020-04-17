@@ -1,4 +1,4 @@
-# Changelog
+# Change Log
 
 | Date | Version | Description |
 | :--- | :--- | :--- |

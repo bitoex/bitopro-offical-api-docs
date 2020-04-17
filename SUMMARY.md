@@ -22,7 +22,7 @@
     * [Cancel an order](v2/rest/auth/cancel-order.md)
   * [Authentication](v2/rest/authentication.md)
   * [Rest](v2/rest/rest.md)
-  * [Changelog](v2/rest/changelog.md)
+  * [Change Log](v2/rest/changelog.md)
 
 ## v3
 
@@ -45,7 +45,7 @@
     * [Cancel multiple orders](v3/rest/auth/cancel-batch.md)
   * [Authentication](v3/rest/authentication.md)
   * [Rest](v3/rest/rest.md)
-  * [Changelog](v3/rest/changelog.md)
+  * [Change Log](v3/rest/changelog.md)
 * [Websocket](v3/ws/README.md)
   * [WebSocket Streams for BitoPro](v3/ws/ws.md)
 
