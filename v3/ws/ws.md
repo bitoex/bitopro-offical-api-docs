@@ -47,19 +47,177 @@ Order book pushed all data every second when updated. You can specifiy one or mo
 
 `GET` **wss://stream.bitopro.com:9443/ws/v1/pub/order-books/{pair}**
 
-Sample \`\`\`json GET wss://stream.bitopro.com:9443/ws/v1/pub/order-books/BTC\_TWD { "event": "ORDER\_BOOK", "pair": "BTC\_TWD", "bids": \[ { "price": "1", "amount": "1", "count": 1, "total": "1" }, ... \], "asks": \[ { "price": "0.9", "amount": "1", "count": 2, "total": "2" }, ... \], "timestamp": 1136185445000, "datetime": "2006-01-02T15:04:05.700Z" } \`\`\`
+Sample
+
+```javascript
+GET wss://stream.bitopro.com:9443/ws/v1/pub/order-books/BTC_TWD
+
+{
+  "event": "ORDER_BOOK",
+  "pair": "BTC_TWD",
+  "bids": [
+    {
+      "price": "1",
+      "amount": "1",
+      "count": 1,
+      "total": "1"
+    }
+    ...
+  ],
+  "asks": [
+    {
+      "price": "0.9",
+      "amount": "1",
+      "count": 2,
+      "total": "2"
+    }
+    ...
+  ],
+  "timestamp": 1136185445000,
+  "datetime": "2006-01-02T15:04:05.700Z"
+}
+```
 
 `GET` **wss://stream.bitopro.com:9443/ws/v1/pub/order-books?pairs={pair},{pair},...**
 
-Sample \`\`\`json GET wss://stream.bitopro.com:9443/ws/v1/pub/order-books?pairs=BTC\_TWD,ETH\_TWD { "event": "ORDER\_BOOK", "pair": "BTC\_TWD", "bids": \[ { "price": "1", "amount": "1", "count": 1, "total": "1" }, ... \], "asks": \[ { "price": "0.9", "amount": "1", "count": 2, "total": "2" }, ... \], "timestamp": 1136185445000, "datetime": "2006-01-02T15:04:05.700Z" } { "event": "ORDER\_BOOK", "pair": "ETH\_TWD", "bids": \[ { "price": "1", "amount": "1", "count": 1, "total": "1" }, ... \], "asks": \[ { "price": "0.9", "amount": "1", "count": 2, "total": "2" }, ... \], "timestamp": 1136185445000, "datetime": "2006-01-02T15:04:05.700Z" } \`\`\`
+```javascript
+GET wss://stream.bitopro.com:9443/ws/v1/pub/order-books?pairs=BTC_TWD,ETH_TWD
+
+{
+  "event": "ORDER_BOOK",
+  "pair": "BTC_TWD",
+  "bids": [
+    {
+      "price": "1",
+      "amount": "1",
+      "count": 1,
+      "total": "1"
+    }
+    ...
+  ],
+  "asks": [
+    {
+      "price": "0.9",
+      "amount": "1",
+      "count": 2,
+      "total": "2"
+    }
+    ...
+  ],
+  "timestamp": 1136185445000,
+  "datetime": "2006-01-02T15:04:05.700Z"
+},
+{
+  "event": "ORDER_BOOK",
+  "pair": "ETH_TWD",
+  "bids": [
+    {
+      "price": "1",
+      "amount": "1",
+      "count": 1,
+      "total": "1"
+    }
+    ...
+  ],
+  "asks": [
+    {
+      "price": "0.9",
+      "amount": "1",
+      "count": 2,
+      "total": "2"
+    }
+    ...
+  ],
+  "timestamp": 1136185445000,
+  "datetime": "2006-01-02T15:04:05.700Z"
+}
+```
 
 `GET` **wss://stream.bitopro.com:9443/ws/v1/pub/order-books/{pair}:{limit}**
 
-Sample \`\`\`json GET wss://stream.bitopro.com:9443/ws/v1/pub/order-books/BTC\_TWD:1 { "event": "ORDER\_BOOK", "pair": "BTC\_TWD", "bids": \[ { "price": "1", "amount": "1", "count": 1, "total": "1" }, ... \], "asks": \[ { "price": "0.9", "amount": "1", "count": 2, "total": "2" }, ... \], "timestamp": 1136185445000, "datetime": "2006-01-02T15:04:05.700Z" } \`\`\`
+```javascript
+GET wss://stream.bitopro.com:9443/ws/v1/pub/order-books/BTC_TWD:1
+
+{
+  "event": "ORDER_BOOK",
+  "pair": "BTC_TWD",
+  "bids": [
+    {
+      "price": "1",
+      "amount": "1",
+      "count": 1,
+      "total": "1"
+    }
+    ...
+  ],
+  "asks": [
+    {
+      "price": "0.9",
+      "amount": "1",
+      "count": 2,
+      "total": "2"
+    }
+    ...
+  ],
+  "timestamp": 1136185445000,
+  "datetime": "2006-01-02T15:04:05.700Z"
+}
+```
 
 `GET` **wss://stream.bitopro.com:9443/ws/v1/pub/order-books?pairs={pair}:{limit},{pair}:{limit},...**
 
-Sample \`\`\`json GET wss://stream.bitopro.com:9443/ws/v1/pub/order-books?pairs=BTC\_TWD:1,ETH\_TWD:1 { "event": "ORDER\_BOOK", "pair": "BTC\_TWD", "bids": \[ { "price": "1", "amount": "1", "count": 1, "total": "1" }, ... \], "asks": \[ { "price": "0.9", "amount": "1", "count": 2, "total": "2" }, ... \], "timestamp": 1136185445000, "datetime": "2006-01-02T15:04:05.700Z" } { "event": "ORDER\_BOOK", "pair": "ETH\_TWD", "bids": \[ { "price": "1", "amount": "1", "count": 1, "total": "1" }, ... \], "asks": \[ { "price": "0.9", "amount": "1", "count": 2, "total": "2" }, ... \], "timestamp": 1136185445000, "datetime": "2006-01-02T15:04:05.700Z" } \`\`\`
+```javascript
+GET wss://stream.bitopro.com:9443/ws/v1/pub/order-books?pairs=BTC_TWD:1,ETH_TWD:1
+
+{
+    "event": "ORDER_BOOK",
+    "pair": "BTC_TWD",
+    "bids": [
+      {
+        "price": "1",
+        "amount": "1",
+        "count": 1,
+        "total": "1"
+      }
+      ...
+    ],
+    "asks": [
+      {
+        "price": "0.9",
+        "amount": "1",
+        "count": 2,
+        "total": "2"
+      }
+      ...
+    ],
+    "timestamp": 1136185445000,
+    "datetime": "2006-01-02T15:04:05.700Z"
+  },
+  {
+    "event": "ORDER_BOOK",
+    "pair": "ETH_TWD",
+    "bids": [
+      {
+        "price": "1",
+        "amount": "1",
+        "count": 1,
+        "total": "1"
+      }
+      ...
+    ],
+    "asks": [
+      {
+        "price": "0.9",
+        "amount": "1",
+        "count": 2,
+        "total": "2"
+      }
+      ...
+    ],
+    "timestamp": 1136185445000,
+    "datetime": "2006-01-02T15:04:05.700Z"
+  }
+```
 
 ### Ticker
 
