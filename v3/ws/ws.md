@@ -248,11 +248,53 @@ Ticker pushed 24hr rollwing window statistics when updated.
 
 `GET` **wss://stream.bitopro.com:9443/ws/v1/pub/tickers/{pair}**
 
-Sample \`\`\`json GET wss://stream.bitopro.com:9443/ws/v1/pub/tickers/BTC\_TWD { "event": "TICKER", "pair": "BTC\_TWD", "lastPrice": "1", "isBuyer": true, "priceChange24hr": "1", "volume24hr": "1", "high24hr": "1", "low24hr": "1", "timestamp": 1136185445000, "datetime": "2006-01-02T15:04:05.700Z" } \`\`\`
+```javascript
+GET wss://stream.bitopro.com:9443/ws/v1/pub/tickers/BTC_TWD
+
+{
+  "event": "TICKER",
+  "pair": "BTC_TWD",
+  "lastPrice": "1",
+  "isBuyer": true,
+  "priceChange24hr": "1",
+  "volume24hr": "1",
+  "high24hr": "1",
+  "low24hr": "1",
+  "timestamp": 1136185445000,
+  "datetime": "2006-01-02T15:04:05.700Z"
+}
+```
 
 `GET` **wss://stream.bitopro.com:9443/ws/v1/pub/tickers?pairs={pair},{pair},...**
 
-Sample \`\`\`json GET wss://stream.bitopro.com:9443/ws/v1/pub/tickers?pairs=BTC\_TWD,BITO\_ETH { "event": "TICKER", "pair": "BTC\_TWD", "lastPrice": "1", "isBuyer": true, "priceChange24hr": "1", "volume24hr": "1", "high24hr": "1", "low24hr": "1", "timestamp": 1136185445000, "datetime": "2006-01-02T15:04:05.700Z" } { "event": "TICKER", "pair": "BITO\_ETH", "lastPrice": "1", "isBuyer": true, "priceChange24hr": "1", "volume24hr": "1", "high24hr": "1", "low24hr": "1", "timestamp": 1136185445000, "datetime": "2006-01-02T15:04:05.700Z" } \`\`\`
+```javascript
+GET wss://stream.bitopro.com:9443/ws/v1/pub/tickers?pairs=BTC_TWD,BITO_ETH
+
+{
+    "event": "TICKER",
+    "pair": "BTC_TWD",
+    "lastPrice": "1",
+    "isBuyer": true,
+    "priceChange24hr": "1",
+    "volume24hr": "1",
+    "high24hr": "1",
+    "low24hr": "1",
+    "timestamp": 1136185445000,
+    "datetime": "2006-01-02T15:04:05.700Z"
+  },
+  {
+    "event": "TICKER",
+    "pair": "BITO_ETH",
+    "lastPrice": "1",
+    "isBuyer": true,
+    "priceChange24hr": "1",
+    "volume24hr": "1",
+    "high24hr": "1",
+    "low24hr": "1",
+    "timestamp": 1136185445000,
+    "datetime": "2006-01-02T15:04:05.700Z"
+  }
+```
 
 ### Trade
 
@@ -283,9 +325,78 @@ Trade pushed full data when updated.
 
 `GET` **wss://stream.bitopro.com:9443/ws/v1/pub/trades/{pair}**
 
-Sample \`\`\`json GET wss://stream.bitopro.com:9443/ws/v1/pub/tickers/BTC\_TWD { "event": "TRADE", "pair": "BTC\_TWD", "timestamp": 1136185445000, "datetime": "2006-01-02T15:04:05.700Z", "data": \[ { "timestamp": 1136185445, "price": "1", "amount": "1", "isBuyer" :false }, { "timestamp": 1136185445, "price": "1", "amount": "1", "isBuyer" :true }, ... \] } \`\`\`
+```javascript
+GET wss://stream.bitopro.com:9443/ws/v1/pub/tickers/BTC_TWD
+
+{
+  "event": "TRADE",
+  "pair": "BTC_TWD",
+  "timestamp": 1136185445000,
+  "datetime": "2006-01-02T15:04:05.700Z",
+  "data": [
+    {
+      "timestamp": 1136185445,
+      "price": "1",
+      "amount": "1",
+      "isBuyer": false
+    },
+    {
+      "timestamp": 1136185445,
+      "price": "1",
+      "amount": "1",
+      "isBuyer": true
+    }
+    ...
+  ]
+}
+```
 
 `GET` **wss://stream.bitopro.com:9443/ws/v1/pub/trades?pairs={pair},{pair},...**
 
-Sample \`\`\`json GET wss://stream.bitopro.com:9443/ws/v1/pub/tickers?pairs=BTC\_TWD,BITO\_ETH { "event": "TRADE", "pair": "BTC\_TWD", "timestamp": 1136185445000, "datetime": "2006-01-02T15:04:05.700Z", "data": \[ { "timestamp": 1136185445, "price": "1", "amount": "1", "isBuyer" :false }, { "timestamp": 1136185445, "price": "1", "amount": "1", "isBuyer" :true }, ... \] } { "event": "TRADE", "pair": "BITO\_ETH", "timestamp": 1136185445000, "datetime": "2006-01-02T15:04:05.700Z", "data": \[ { "timestamp": 1136185445, "price": "1", "amount": "1", "isBuyer" :false }, { "timestamp": 1136185445, "price": "1", "amount": "1", "isBuyer" :true }, ... \] } \`\`\`
+```javascript
+GET wss://stream.bitopro.com:9443/ws/v1/pub/tickers?pairs=BTC_TWD,BITO_ETH
+
+{
+    "event": "TRADE",
+    "pair": "BTC_TWD",
+    "timestamp": 1136185445000,
+    "datetime": "2006-01-02T15:04:05.700Z",
+    "data": [
+      {
+        "timestamp": 1136185445,
+        "price": "1",
+        "amount": "1",
+        "isBuyer": false
+      },
+      {
+        "timestamp": 1136185445,
+        "price": "1",
+        "amount": "1",
+        "isBuyer": true
+      }
+      ...
+    ]
+  },
+  {
+    "event": "TRADE",
+    "pair": "BITO_ETH",
+    "timestamp": 1136185445000,
+    "datetime": "2006-01-02T15:04:05.700Z",
+    "data": [
+      {
+        "timestamp": 1136185445,
+        "price": "1",
+        "amount": "1",
+        "isBuyer": false
+      },
+      {
+        "timestamp": 1136185445,
+        "price": "1",
+        "amount": "1",
+        "isBuyer": true
+      }
+      ...
+    ]
+  }
+```
 
