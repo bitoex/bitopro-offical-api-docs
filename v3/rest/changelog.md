@@ -9,5 +9,5 @@
 |  |  | Removed [Get ticker](rest/open/ticker.md) API |
 |  |  | Add `tradable` to [Get the account balance](auth/account-balance.md) API |
 
-[Back](rest.md)
+[Back](./rest.md)
 
