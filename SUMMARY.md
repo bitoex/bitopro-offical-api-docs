@@ -27,7 +27,7 @@
 ## v3 <a id="v3"></a>
 
 * [Rest](v3/rest/README.md)
-  * [open](v3/rest/open/README.md)
+  * [Open](v3/rest/open/README.md)
     * [Get order book](v3/rest/open/order-book.md)
     * [Get the limitations and fees](v3/rest/open/lims-fees.md)
     * [Get the list of available pairs](v3/rest/open/trading-pairs.md)
