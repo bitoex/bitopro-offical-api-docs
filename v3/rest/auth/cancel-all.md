@@ -1,4 +1,4 @@
-# Cancel All orders
+# Cancel all orders
 
 ## `DELETE` /orders/all or /orders/{pair}
 

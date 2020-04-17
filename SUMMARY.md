@@ -41,7 +41,7 @@
     * [Get an order](v3/rest/auth/get-order.md)
     * [Create an order](v3/rest/auth/create-order.md)
     * [Cancel an order](v3/rest/auth/cancel-order.md)
-    * [Cancel All orders](v3/rest/auth/cancel-all.md)
+    * [Cancel all orders](v3/rest/auth/cancel-all.md)
     * [Cancel multiple orders](v3/rest/auth/cancel-batch.md)
   * [Authentication](v3/rest/authentication.md)
   * [Rest](v3/rest/rest.md)
