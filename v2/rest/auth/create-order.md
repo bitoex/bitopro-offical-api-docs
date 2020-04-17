@@ -1,4 +1,4 @@
-# create-order
+# Create an order
 
 ## Create an order
 

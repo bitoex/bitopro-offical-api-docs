@@ -1,4 +1,4 @@
-# rest
+# Rest
 
 ## For most current API please see [V3](../../v3/rest/rest.md)
 
