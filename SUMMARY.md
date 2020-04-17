@@ -26,8 +26,6 @@
 
 ## v3 <a id="v3-1"></a>
 
-* [ws](v3-1/ws/README.md)
-  * [WebSocket Streams for BitoPro](v3-1/ws/ws.md)
 * [rest](v3-1/rest/README.md)
   * [auth](v3-1/rest/auth/README.md)
     * [Cancel multiple orders](v3-1/rest/auth/cancel-batch.md)
@@ -47,4 +45,6 @@
     * [Get the recent trades](v3-1/rest/open/trades.md)
   * [Open API Document（v3.0.0）for BitoPro](v3-1/rest/rest.md)
   * [Changelog](v3-1/rest/changelog.md)
+* [ws](v3-1/ws/README.md)
+  * [WebSocket Streams for BitoPro](v3-1/ws/ws.md)
 
