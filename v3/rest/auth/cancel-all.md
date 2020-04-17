@@ -1,4 +1,4 @@
-# Cancel all orders
+# Cancel All orders
 
 ## `DELETE` /orders/all or /orders/{pair}
 
@@ -10,7 +10,7 @@ If you send a request to /orders/all API. It will cancel all your active orders 
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | X-BITOPRO-APIKEY |  |  | string | Yes | [API Key](../authentication.md#api-key) |  |  |  |
 | X-BITOPRO-PAYLOAD |  |  | string | Yes | [Payload](../authentication.md#payload) |  |  |  |
-| X-BITOPRO-SIGNATURE |  |  | string | Yes | [Signature](../rest/authentication.md#signature) |  |  |  |
+| X-BITOPRO-SIGNATURE |  |  | string | Yes | [Signature](https://github.com/bitoex/bitopro-offical-api-docs/tree/12ea3bcb802087dc9b1cfb281d9cfbfd0de9b670/v3/rest/rest/authentication.md#signature) |  |  |  |
 |  | pair |  | string | No | The trading pair in format ${BASE}\_${QUOTE}, Please follow the [link](https://www.bitopro.com/fees) to check the pair list. |  |  | bito\_eth |
 
 ## Response sample
