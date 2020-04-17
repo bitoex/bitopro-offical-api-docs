@@ -8,9 +8,9 @@ Send a json format request to cancel multiple orders at a time.
 
 | Header | Path | Query | Type | Required | Description | Default | Range | Example |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| X-BITOPRO-APIKEY |  |  | string | Yes | [API Key](../rest/authentication.md#api-key) |  |  |  |
-| X-BITOPRO-PAYLOAD |  |  | string | Yes | [Payload](../rest/authentication.md#payload) |  |  |  |
-| X-BITOPRO-SIGNATURE |  |  | string | Yes | [Signature](../rest/authentication.md#signature) |  |  |  |
+| X-BITOPRO-APIKEY |  |  | string | Yes | [API Key](../authentication.md#api-key) |  |  |  |
+| X-BITOPRO-PAYLOAD |  |  | string | Yes | [Payload](../authentication.md#payload) |  |  |  |
+| X-BITOPRO-SIGNATURE |  |  | string | Yes | [Signature](../authentication.md#signature) |  |  |  |
 |  | pair |  | string | Yes | The trading pair in format ${BASE}\_${QUOTE}, Please follow the [link](https://www.bitopro.com/fees) to check the pair list. |  |  | bito\_eth |
 |  | orderId |  | string | Yes | The id of the order. |  |  | 2959906694 |
 

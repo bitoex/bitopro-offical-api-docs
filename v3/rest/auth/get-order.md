@@ -6,9 +6,9 @@
 
 | Header | Path | Query | Type | Required | Description | Default | Range | Example |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| X-BITOPRO-APIKEY |  |  | string | Yes | [API Key](https://github.com/bitoex/bitopro-offical-api-docs/tree/0c7e56832af4a94af9c07c82892c49d35ab949b2/rest/v3/authentication.md#api-key) |  |  |  |
-| X-BITOPRO-PAYLOAD |  |  | string | Yes | [Payload](https://github.com/bitoex/bitopro-offical-api-docs/tree/0c7e56832af4a94af9c07c82892c49d35ab949b2/rest/v3/authentication.md#payload) |  |  |  |
-| X-BITOPRO-SIGNATURE |  |  | string | Yes | [Signature](https://github.com/bitoex/bitopro-offical-api-docs/tree/0c7e56832af4a94af9c07c82892c49d35ab949b2/rest/v3/authentication.md#signature) |  |  |  |
+| X-BITOPRO-APIKEY |  |  | string | Yes | [API Key](../authentication.md#api-key) |  |  |  |
+| X-BITOPRO-PAYLOAD |  |  | string | Yes | [Payload](../authentication.md#payload) |  |  |  |
+| X-BITOPRO-SIGNATURE |  |  | string | Yes | [Signature](../authentication.md#signature) |  |  |  |
 |  | pair |  | string | Yes | The trading pair in format ${BASE}\_${QUOTE}, Please follow the [link](https://www.bitopro.com/fees) to check the pair list. |  |  | bito\_eth |
 |  | orderId |  | string | Yes | The id of the order. |  |  | 2959906694 |
 
