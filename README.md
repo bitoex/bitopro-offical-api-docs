@@ -8,7 +8,7 @@
 
 ## Docs
 
-### [Restful APIs](v2-1/rest/rest.md)
+### [Restful APIs](v3-1/rest/rest.md)
 
 ### [Websocket APIs](v3-1/ws/ws.md)
 
