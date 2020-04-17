@@ -1,6 +1,6 @@
 # rest
 
-## For most current API please see [V3](../../v3-1/rest/rest.md)
+## For most current API please see [V3](rest/rest.md)
 
 ## Open API Document（v2.8.0）for BitoPro
 
@@ -53,12 +53,12 @@
 | Endpoint | URL | Example |
 | :--- | :--- | :--- |
 | [Get order book](open/order-book.md) | `GET` /order-book/{pair} | [https://api.bitopro.com/v2/order-book/bito\_twd](https://api.bitopro.com/v2/order-book/bito_twd) |
-| [Get the list of currencies](../../v3-1/rest/open/currencies.md) | `GET` /provisioning/currencies | [https://api.bitopro.com/v2/provisioning/currencies](https://api.bitopro.com/v2/provisioning/currencies) |
-| [Get the list of available pairs](../../v3-1/rest/open/trading-pairs.md) | `GET` /provisioning/trading-pairs | [https://api.bitopro.com/v2/provisioning/trading-pairs](https://api.bitopro.com/v2/provisioning/trading-pairs) |
+| [Get the list of currencies](rest/open/currencies.md) | `GET` /provisioning/currencies | [https://api.bitopro.com/v2/provisioning/currencies](https://api.bitopro.com/v2/provisioning/currencies) |
+| [Get the list of available pairs](rest/open/trading-pairs.md) | `GET` /provisioning/trading-pairs | [https://api.bitopro.com/v2/provisioning/trading-pairs](https://api.bitopro.com/v2/provisioning/trading-pairs) |
 | [Get ticker](open/ticker.md) | `GET` /ticker/{pair} | [https://api.bitopro.com/v2/ticker/bito\_twd](https://api.bitopro.com/v2/ticker/bito_twd) |
-| [Get tickers](../../v3-1/rest/open/tickers.md) | `GET` /tickers/{pair} | [https://api.bitopro.com/v2/tickers](https://api.bitopro.com/v2/tickers) |
-| [Get the recent trades](../../v3-1/rest/open/trades.md) | `GET` /trades/{pair} | [https://api.bitopro.com/v2/trades/bito\_twd](https://api.bitopro.com/v2/trades/bito_twd) |
-| [Get trading history](../../v3-1/rest/open/trading-history.md) | `GET` /trading-history/{pair} | [https://api.bitopro.com/v2/trading-history/btc\_twd?resolution=1w&from=1550822974&to=1566375034](https://api.bitopro.com/v2/trading-history/btc_twd?resolution=1w&from=1550822974&to=1566375034) |
+| [Get tickers](rest/open/tickers.md) | `GET` /tickers/{pair} | [https://api.bitopro.com/v2/tickers](https://api.bitopro.com/v2/tickers) |
+| [Get the recent trades](rest/open/trades.md) | `GET` /trades/{pair} | [https://api.bitopro.com/v2/trades/bito\_twd](https://api.bitopro.com/v2/trades/bito_twd) |
+| [Get trading history](rest/open/trading-history.md) | `GET` /trading-history/{pair} | [https://api.bitopro.com/v2/trading-history/btc\_twd?resolution=1w&from=1550822974&to=1566375034](https://api.bitopro.com/v2/trading-history/btc_twd?resolution=1w&from=1550822974&to=1566375034) |
 
 #### `Auth`
 

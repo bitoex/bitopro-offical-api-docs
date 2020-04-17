@@ -6,9 +6,9 @@
 
 | Header | Path | Query | Type | Required | Description | Default | Range | Example |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| X-BITOPRO-APIKEY |  |  | string | Yes | [API Key](../../../v2-1/rest/authentication.md#api-key) |  |  |  |
-| X-BITOPRO-PAYLOAD |  |  | string | Yes | [Payload](../../../v2-1/rest/authentication.md#payload) |  |  |  |
-| X-BITOPRO-SIGNATURE |  |  | string | Yes | [Signature](../../../v2-1/rest/authentication.md#signature) |  |  |  |
+| X-BITOPRO-APIKEY |  |  | string | Yes | [API Key](../rest/authentication.md#api-key) |  |  |  |
+| X-BITOPRO-PAYLOAD |  |  | string | Yes | [Payload](../rest/authentication.md#payload) |  |  |  |
+| X-BITOPRO-SIGNATURE |  |  | string | Yes | [Signature](../rest/authentication.md#signature) |  |  |  |
 |  | pair |  | string | Yes | The trading pair in format ${BASE}\_${QUOTE}, Please follow the [link](https://www.bitopro.com/fees) to check the pair list. |  |  | bito\_eth |
 |  |  | page | integer | No | The page number for the query. | 1 |  | 1 |
 |  |  | active | bool | No | The flag to specify if only active\(in progress\) orders will return. | `false` | `true`, `false` | true |

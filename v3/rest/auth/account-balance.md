@@ -6,9 +6,9 @@
 
 | Header | Path | Query | Type | Required | Description | Default | Range | Example |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| X-BITOPRO-APIKEY |  |  | string | Yes | [API Key](../../../v2-1/rest/authentication.md#api-key) |  |  |  |
-| X-BITOPRO-PAYLOAD |  |  | string | Yes | [Payload](../../../v2-1/rest/authentication.md#payload) |  |  |  |
-| X-BITOPRO-SIGNATURE |  |  | string | Yes | [Signature](../../../v2-1/rest/authentication.md#signature) |  |  |  |
+| X-BITOPRO-APIKEY |  |  | string | Yes | [API Key](../rest/authentication.md#api-key) |  |  |  |
+| X-BITOPRO-PAYLOAD |  |  | string | Yes | [Payload](../rest/authentication.md#payload) |  |  |  |
+| X-BITOPRO-SIGNATURE |  |  | string | Yes | [Signature](../rest/authentication.md#signature) |  |  |  |
 
 ## Response sample
 
