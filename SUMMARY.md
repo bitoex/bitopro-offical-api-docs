@@ -2,6 +2,31 @@
 
 * [README](README.md)
 
+## v3 <a id="v3-1"></a>
+
+* [Rest](v3-1/rest-1/README.md)
+  * [Open](v3-1/rest-1/open/README.md)
+    * [Get order book](v3-1/rest-1/open/order-book.md)
+    * [Get the limitations and fees](v3-1/rest-1/open/lims-fees.md)
+    * [Get the list of available pairs](v3-1/rest-1/open/trading-pairs.md)
+    * [Get tickers](v3-1/rest-1/open/tickers.md)
+    * [Get the data of candlestick chart](v3-1/rest-1/open/trading-history.md)
+    * [Get the list of currencies](v3-1/rest-1/open/currencies.md)
+    * [Get the recent trades](v3-1/rest-1/open/trades.md)
+  * [Auth](v3-1/rest-1/auth/README.md)
+    * [Get the account balance](v3-1/rest-1/auth/account-balance.md)
+    * [Get order list](v3-1/rest-1/auth/order-list.md)
+    * [Get an order](v3-1/rest-1/auth/get-order.md)
+    * [Create an order](v3-1/rest-1/auth/create-order.md)
+    * [Cancel an order](v3-1/rest-1/auth/cancel-order.md)
+    * [Cancel all orders](v3-1/rest-1/auth/cancel-all.md)
+    * [Cancel multiple orders](v3-1/rest-1/auth/cancel-batch.md)
+  * [Authentication](v3-1/rest-1/authentication.md)
+  * [Rest](v3-1/rest-1/rest.md)
+  * [Change Log](v3-1/rest-1/changelog.md)
+* [Websocket](v3-1/ws/README.md)
+  * [WebSocket Streams for BitoPro](v3-1/ws/ws.md)
+
 ## v2
 
 * [Rest](v2/rest/README.md)
@@ -23,29 +48,4 @@
   * [Authentication](v2/rest/authentication.md)
   * [Rest](v2/rest/rest.md)
   * [Change Log](v2/rest/changelog.md)
-
-## v3
-
-* [Rest](v3/rest/README.md)
-  * [Open](v3/rest/open/README.md)
-    * [Get order book](v3/rest/open/order-book.md)
-    * [Get the limitations and fees](v3/rest/open/lims-fees.md)
-    * [Get the list of available pairs](v3/rest/open/trading-pairs.md)
-    * [Get tickers](v3/rest/open/tickers.md)
-    * [Get the data of candlestick chart](v3/rest/open/trading-history.md)
-    * [Get the list of currencies](v3/rest/open/currencies.md)
-    * [Get the recent trades](v3/rest/open/trades.md)
-  * [Auth](v3/rest/auth/README.md)
-    * [Get the account balance](v3/rest/auth/account-balance.md)
-    * [Get order list](v3/rest/auth/order-list.md)
-    * [Get an order](v3/rest/auth/get-order.md)
-    * [Create an order](v3/rest/auth/create-order.md)
-    * [Cancel an order](v3/rest/auth/cancel-order.md)
-    * [Cancel all orders](v3/rest/auth/cancel-all.md)
-    * [Cancel multiple orders](v3/rest/auth/cancel-batch.md)
-  * [Authentication](v3/rest/authentication.md)
-  * [Rest](v3/rest/rest.md)
-  * [Change Log](v3/rest/changelog.md)
-* [Websocket](v3/ws/README.md)
-  * [WebSocket Streams for BitoPro](v3/ws/ws.md)
 

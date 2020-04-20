@@ -1,6 +1,6 @@
 # Rest
 
-## For most current API please see [V3](../../v3/rest/rest.md)
+## For most current API please see [V3](../../v3-1/rest-1/rest.md)
 
 ## Open API Document（v2.8.0）for BitoPro
 
