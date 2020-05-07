@@ -15,7 +15,7 @@
 
 | Field | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| currency | string | No | The currency to send.|
+| currency | string | Yes | The currency to send.|
 | protocol | string | No | The protocol to send. Allowed values: MAIN, ERC20, OMNI, BNB. Default: MAIN. USDT have ERC20 and OMNI to choose. |
 | address | string | Yes | The address or bank account to send fund. |
 | amount | string | Yes | The amount of fund to send. |
