@@ -16,7 +16,7 @@
 | Field | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | currency | string | Yes | The currency to send.|
-| protocol | string | No | The protocol to send. Allowed values: MAIN, ERC20, OMNI, BNB. Default: MAIN. USDT have ERC20 and OMNI to choose. |
+| protocol | string | No | The protocol to send. Allowed values: MAIN, ERC20, OMNI. Default: MAIN. USDT have ERC20 and OMNI to choose. |
 | address | string | No | The address or bank account to send fund. Required for non-TWD withdraw.|
 | amount | string | Yes | The amount of fund to send. |
 | message | string | No | The message or note to be attached with withdraw. For some currencies, it is required. For example EOS and BNB.|
