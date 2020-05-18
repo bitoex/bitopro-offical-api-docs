@@ -9,13 +9,12 @@
 | X-BITOPRO-APIKEY |  |  | string | Yes | [API Key](../authentication.md#api-key) |  |  |  |
 | X-BITOPRO-PAYLOAD |  |  | string | Yes | [Payload](../authentication.md#payload) |  |  |  |
 | X-BITOPRO-SIGNATURE |  |  | string | Yes | [Signature](../authentication.md#signature) |  |  |  |
-
+|  | currency |  | string | Yes | The currency to withdraw. Please follow the [link](https://www.bitopro.com/fees) to check the currency list. |  |  | twd |
 
 ## Request body
 
 | Field | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| currency | string | Yes | The currency to send.|
 | protocol | string | No | The protocol to send. Allowed values: MAIN, ERC20, OMNI. Default: MAIN. USDT have ERC20 and OMNI to choose. |
 | address | string | No | The address or bank account to send fund. Required for non-TWD withdraw.|
 | amount | string | Yes | The amount of fund to send. |
