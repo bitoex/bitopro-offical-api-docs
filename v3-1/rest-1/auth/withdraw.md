@@ -33,6 +33,7 @@
       "address": "64382xx3234",
       "amount": "12353", //amount actually sent
       "fee": "15", //fee deducted from initial amount
+      "total": "12368", //total amount deducted
       "message": "test" //may not be included 
     }
 }
