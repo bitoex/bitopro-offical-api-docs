@@ -69,6 +69,6 @@
 | [Cancel all orders](auth/cancel-all.md) | `DELETE` /orders/all or /orders/{pair} | [https://api.bitopro.com/v3/orders/all](https://api.bitopro.com/v3/orders/all) or [https://api.bitopro.com/v3/orders/btc\_usdt](https://api.bitopro.com/v3/orders/btc_usdt) |
 | [Cancel multiple orders](auth/cancel-batch.md) | `PUT` /orders | [https://api.bitopro.com/v3/orders](https://api.bitopro.com/v3/orders) |
 | [Get an order](auth/get-order.md) | `GET` /orders/{pair}/{orderId} | [https://api.bitopro.com/v3/orders/bito\_twd/123456789](https://api.bitopro.com/v3/orders/bito_twd/123456789) |
-| [Get Withdraw Information](v3-1/rest-1/auth/get-withdraw.md) | `GET` /wallet/withdraw/{currency}/{serial} | [https://api.bitopro.com/v3/wallet/withdraw/twd/123456](https://api.bitopro.com/v3/wallet/withdraw/123456) |
+| [Get Withdraw Information](auth/get-withdraw.md) | `GET` /wallet/withdraw/{currency}/{serial} | [https://api.bitopro.com/v3/wallet/withdraw/twd/123456](https://api.bitopro.com/v3/wallet/withdraw/123456) |
 | [Withdraw](auth/withdraw.md) | `POST` /wallet/withdraw/{currency} | [https://api.bitopro.com/v3/wallet/withdraw/twd](https://api.bitopro.com/v3/wallet/withdraw/twd) |
 
