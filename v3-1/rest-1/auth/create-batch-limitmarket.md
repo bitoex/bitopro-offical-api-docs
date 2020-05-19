@@ -4,6 +4,10 @@
 
 Up to 10 limit/market orders can be created at a time.
 
+## Rate limit
+
+Allow `60` requests per minute per IP.
+
 ### `POST` /orders/batch
 
 ### Headers

@@ -1,5 +1,9 @@
 # Withdraw
 
+## Rate limit
+
+Allow `60` requests per minute per IP.
+
 ## `POST` /wallet/withdraw/{currency}
 
 ## Parameters
