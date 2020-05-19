@@ -1,6 +1,6 @@
 # Withdraw
 
-## `POST` /wallet/withdraw
+## `POST` /wallet/withdraw/{currency}
 
 ## Parameters
 
