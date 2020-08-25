@@ -2,6 +2,10 @@
 
 ## `GET` /orders/{pair}
 
+## Rate limit
+
+Allow `1` request per second per IP.
+
 ## Parameters
 
 | Header | Path | Query | Type | Required | Description | Default | Range | Example |
