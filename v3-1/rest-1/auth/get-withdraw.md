@@ -22,12 +22,13 @@
   "data": 
     {
       "serial": "20200417TW51258295",
-      "currency": "TWD",
+      "datetime": "1601951443",
       "protocol": "MAIN",
       "address": "64382xx3234",
       "amount": "12353", //amount actually sent
       "fee": "15", //fee deducted from initial amount
       "total": "12368",
+      "status": "WAIT_PROCESS",
       "message": "test" //may not be included 
     }
 }
