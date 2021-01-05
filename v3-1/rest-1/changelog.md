@@ -2,6 +2,7 @@
 
 | Date | Version | Description |
 | :--- | :--- | :--- |
+| 2021/01/05 | v3.5.1 | Support [All Orders](auth/all-order.md) |
 | 2020/05/19 | v3.5.0 | Support [Withdraw](auth/withdraw.md) and [Withdraw status](auth/get-withdraw.md) API |
 |  |  | Support [Create batch limit/market orders](auth/create-batch-limitmarket.md)
 | 2020/03/31 | v3.3.0 | Support [Cancel all](auth/cancel-all.md) and [Cancel batch](auth/cancel-batch.md) APIs |

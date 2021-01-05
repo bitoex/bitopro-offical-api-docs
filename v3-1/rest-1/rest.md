@@ -62,6 +62,7 @@
 | Endpoint | URL | Example |
 | :--- | :--- | :--- |
 | [Get the account balance](auth/account-balance.md) | `GET` /accounts/balance | [https://api.bitopro.com/v3/accounts/balance](https://api.bitopro.com/v3/accounts/balance) |
+| [Get all orders](auth/all-order.md) | `GET` /orders/{pair} | [https://api.bitopro.com/v3/orders/all/bito\_twd](https://api.bitopro.com/v3/orders/all/bito_twd) |
 | [Get order list](auth/order-list.md) | `GET` /orders/{pair} | [https://api.bitopro.com/v3/orders/bito\_twd](https://api.bitopro.com/v3/orders/bito_twd) |
 | [Create an order](auth/create-order.md) | `POST` /orders/{pair} | [https://api.bitopro.com/v3/orders/bito\_twd](https://api.bitopro.com/v3/orders/bito_twd) |
 | [Create batch limit/market orders](auth/create-batch-limitmarket.md) | `POST` /orders/batch | [https://api.bitopro.com/v3/orders/batch](https://api.bitopro.com/v3/orders/batch) |
