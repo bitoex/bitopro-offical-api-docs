@@ -66,7 +66,7 @@
 | :--- | :--- | :--- |
 | [Get the account balance](auth/account-balance.md) | `GET` /accounts/balance | [https://api.bitopro.com/v2/accounts/balance](https://api.bitopro.com/v2/accounts/balance) |
 | [Get order history](auth/history.md) | `GET` /orders/history | [https://api.bitopro.com/v2/orders/history](https://api.bitopro.com/v2/orders/history) |
-| [Get order list](auth/order-list.md) | `GET` /orders/{pair} | [https://api.bitopro.com/v2/orders/bito\_twd](https://api.bitopro.com/v2/orders/bito_twd) |
+| [Get order list](auth/order-list.md) (Deprecated) | `GET` /orders/{pair} | [https://api.bitopro.com/v2/orders/bito\_twd](https://api.bitopro.com/v2/orders/bito_twd) |
 | [Create an order](auth/create-order.md) | `POST` /orders/{pair} | [https://api.bitopro.com/v2/orders/bito\_twd](https://api.bitopro.com/v2/orders/bito_twd) |
 | [Cancel an order](auth/cancel-order.md) | `DELETE` /orders/{pair}/{id} | [https://api.bitopro.com/v2/orders/bito\_twd/123456789](https://api.bitopro.com/v2/orders/bito_twd/123456789) |
 | [Get an order](auth/get-order.md) | `GET` /orders/{pair}/{orderId} | [https://api.bitopro.com/v2/orders/bito\_twd/123456789](https://api.bitopro.com/v2/orders/bito_twd/123456789) |

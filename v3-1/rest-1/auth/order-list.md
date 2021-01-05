@@ -1,3 +1,5 @@
+# Deprecated, use [All Orders](all-order.md) instead
+
 # Get order list
 
 ## `GET` /orders/{pair}
