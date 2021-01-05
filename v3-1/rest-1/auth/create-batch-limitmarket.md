@@ -17,7 +17,7 @@ Allow `60` requests per minute per IP.
 | X-BITOPRO-APIKEY |  |  | string | Yes | [API Key](../authentication.md#api-key) |  |  |  |
 | X-BITOPRO-PAYLOAD |  |  | string | Yes | [Payload](../authentication.md#payload) |  |  |  |
 | X-BITOPRO-SIGNATURE |  |  | string | Yes | [Signature](../authentication.md#signature) |  |  |  |
-|
+|  |  |  |  |  |  |  |  |  |
 
 ## Parameters
 
@@ -28,7 +28,7 @@ Allow `60` requests per minute per IP.
 | price | string | Yes | The price of the order for the trading pair. |
 | timestamp | integer | Yes | The client timestamp in millisecond. |
 | type | string | Yes | The order type, should only be `LIMIT`, `MARKET`. |
-|
+|  |  |  |  |
 
 ## Request sample
 

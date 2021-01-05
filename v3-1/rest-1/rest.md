@@ -62,8 +62,8 @@
 | Endpoint | URL | Example |
 | :--- | :--- | :--- |
 | [Get the account balance](auth/account-balance.md) | `GET` /accounts/balance | [https://api.bitopro.com/v3/accounts/balance](https://api.bitopro.com/v3/accounts/balance) |
-| [Get all orders](auth/all-order.md) | `GET` /orders/all/{pair} | [https://api.bitopro.com/v3/orders/all/bito\_twd](https://api.bitopro.com/v3/orders/all/bito_twd) |
-| [Get order list](auth/order-list.md) (Deprecated) | `GET` /orders/{pair} | [https://api.bitopro.com/v3/orders/bito\_twd](https://api.bitopro.com/v3/orders/bito_twd) |
+| [Get all orders](https://github.com/bitoex/bitopro-offical-api-docs/tree/ef80d6723fc2328826093e88f9bcbdd232907e1e/v3-1/rest-1/auth/all-order.md) | `GET` /orders/all/{pair} | [https://api.bitopro.com/v3/orders/all/bito\_twd](https://api.bitopro.com/v3/orders/all/bito_twd) |
+| [Get order list](auth/order-list.md) \(Deprecated\) | `GET` /orders/{pair} | [https://api.bitopro.com/v3/orders/bito\_twd](https://api.bitopro.com/v3/orders/bito_twd) |
 | [Create an order](auth/create-order.md) | `POST` /orders/{pair} | [https://api.bitopro.com/v3/orders/bito\_twd](https://api.bitopro.com/v3/orders/bito_twd) |
 | [Create batch limit/market orders](auth/create-batch-limitmarket.md) | `POST` /orders/batch | [https://api.bitopro.com/v3/orders/batch](https://api.bitopro.com/v3/orders/batch) |
 | [Cancel an order](auth/cancel-order.md) | `DELETE` /orders/{pair}/{id} | [https://api.bitopro.com/v3/orders/bito\_twd/123456789](https://api.bitopro.com/v3/orders/bito_twd/123456789) |

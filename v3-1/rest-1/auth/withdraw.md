@@ -19,11 +19,10 @@ Allow `60` requests per minute per IP.
 
 | Field | Type | Required | Description | Default | Range | Example |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| protocol | string | No | The protocol to send. USDT have `ERC20`, `OMNI` and `TRX` to choose.  | `MAIN` | `MAIN`, `ERC20`, `OMNI`, `TRX` | `ERC20` |
-| address | string | No | The address or bank account to send fund. Required for non-TWD withdraw.| | | |
-| amount | string | Yes | The amount of fund to send. | | | |
-| message | string | No | The message or note to be attached with withdraw. For some currencies, it is required, for example, EOS and BNB.| | | |
-
+| protocol | string | No | The protocol to send. USDT have `ERC20`, `OMNI` and `TRX` to choose. | `MAIN` | `MAIN`, `ERC20`, `OMNI`, `TRX` | `ERC20` |
+| address | string | No | The address or bank account to send fund. Required for non-TWD withdraw. |  |  |  |
+| amount | string | Yes | The amount of fund to send. |  |  |  |
+| message | string | No | The message or note to be attached with withdraw. For some currencies, it is required, for example, EOS and BNB. |  |  |  |
 
 ## Response sample
 

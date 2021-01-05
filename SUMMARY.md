@@ -15,6 +15,7 @@
     * [Get the recent trades](v3-1/rest-1/open/trades.md)
   * [Auth](v3-1/rest-1/auth/README.md)
     * [Get the account balance](v3-1/rest-1/auth/account-balance.md)
+    * [Get all orders](v3-1/rest-1/auth/all-order.md)
     * [Get order list](v3-1/rest-1/auth/order-list.md)
     * [Get an order](v3-1/rest-1/auth/get-order.md)
     * [Create an order](v3-1/rest-1/auth/create-order.md)

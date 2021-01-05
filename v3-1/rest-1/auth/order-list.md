@@ -1,14 +1,16 @@
-# Deprecated, use [All Orders](all-order.md) instead
-
 # Get order list
 
-## `GET` /orders/{pair}
+## Deprecated, use [All Orders](https://github.com/bitoex/bitopro-offical-api-docs/tree/fce0d2ff98b20e331fedb24319dfdbc3ad49edaf/v3-1/rest-1/auth/all-order.md) instead
 
-## Rate limit
+## Get order list
+
+### `GET` /orders/{pair}
+
+### Rate limit
 
 Allow `1` request per second per IP.
 
-## Parameters
+### Parameters
 
 | Header | Path | Query | Type | Required | Description | Default | Range | Example |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -19,7 +21,7 @@ Allow `1` request per second per IP.
 |  |  | page | integer | No | The page number for the query. | 1 |  | 1 |
 |  |  | active | bool | No | The flag to specify if only active\(in progress\) orders will return. | `false` | `true`, `false` | true |
 
-## Response sample
+### Response sample
 
 ```javascript
 {

@@ -12,9 +12,6 @@
 |  | currency |  | string | Yes | The currency of the withdraw to get. Please follow the [link](https://www.bitopro.com/fees) to check the currency list. |  |  | twd |
 |  | serial |  | string | Yes | The serial of the withdraw. |  |  | 20200417TW51258295 |
 
-
-
-
 ## Response sample
 
 ```javascript
