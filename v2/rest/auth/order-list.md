@@ -1,3 +1,5 @@
+# Deprecated, use [All Orders](../../../v3-1/rest-1/auth/all-order.md) instead
+
 # Get order list
 
 ## `GET` /orders/{pair}
