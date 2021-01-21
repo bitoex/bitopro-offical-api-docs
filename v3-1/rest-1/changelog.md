@@ -2,7 +2,8 @@
 
 | Date | Version | Description |
 | :--- | :--- | :--- |
-| 2021/01/05 | v3.5.1 | Support [All Orders](https://github.com/bitoex/bitopro-offical-api-docs/tree/fce0d2ff98b20e331fedb24319dfdbc3ad49edaf/v3-1/rest-1/auth/all-order.md), deprecated [Order List](auth/order-list.md) |
+| 2021/01/21 | v3.5.2 | [All Orders](auth/all-order.md), parameter change. `statusKind` `Done` only include status 2 and 3. New parameter `status` added to retrieve single specified `status`. |
+| 2021/01/05 | v3.5.1 | Support [All Orders](auth/all-order.md), deprecated [Order List](auth/order-list.md) |
 | 2020/05/19 | v3.5.0 | Support [Withdraw](auth/withdraw.md) and [Withdraw status](auth/get-withdraw.md) API |
 |  |  | Support [Create batch limit/market orders](auth/create-batch-limitmarket.md) |
 | 2020/03/31 | v3.3.0 | Support [Cancel all](auth/cancel-all.md) and [Cancel batch](auth/cancel-batch.md) APIs |
