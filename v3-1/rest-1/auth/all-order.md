@@ -14,7 +14,8 @@ Fetches all orders of specific pair within 90 days, and ordered by create time.
 |  | pair |  | string | Yes | The trading pair in format ${BASE}\_${QUOTE}, Please follow the [link](https://www.bitopro.com/fees) to check the pair list. |  |  | bito\_eth |
 |  |  | startTimestamp | integer | No | The start time of orders. | 90 days |  | 1605857448852 |
 |  |  | endTimestamp | integer | No | The end time of orders. | current timestamp |  | 1605857448852 |
-|  |  | statusKind | string | No | Filter order based on status, `OPEN` all active orders, `DONE` all finished orders, `ALL` for all. `OPEN` includes order status of -1, 0 and 1, `DONE` includes order status of 2, 3 and 4. For order status, [see](../rest.md#order-status)| `ALL` | `OPEN`, `DONE`, `ALL` | ALL |
+|  |  | statusKind | string | No | Filter order based on status kind, `OPEN` all active orders, `DONE` all finished orders, `ALL` for all. `OPEN` includes order status of -1, 0 and 1, `DONE` includes order status of 2 and 3. For order status, [see](../rest.md#order-status)| `ALL` | `OPEN`, `DONE`, `ALL` | ALL |
+|  |  | status | int | No | Filter order base on specific status. Take precedence over `statusKind`. |  | See [status](../rest.md#order-status) | -1 |
 |  |  | orderId | string | No | If specified, list starts with order with id >= `orderId`. | | | 6432441674 |
 |  |  | limit | integer | No | The number of records to retrieve. | 100 | 1 ~ 1000 | 100 |
 
