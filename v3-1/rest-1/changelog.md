@@ -1,7 +1,8 @@
 # Change Log
 
 | Date | Version | Description |
-| :--- | :--- | :--- |
+| :--- | :--- | :--- | 
+| 2021/03/10 | v3.5.3 | [Limitations and Fees](./open/lims-fees.md), add `protocol` field in response body. |
 | 2021/01/21 | v3.5.2 | [All Orders](auth/all-order.md), parameter change. `statusKind` `Done` only include status 2 and 3. New parameter `status` added to retrieve single specified `status`. |
 | 2021/01/05 | v3.5.1 | Support [All Orders](auth/all-order.md), deprecated [Order List](auth/order-list.md) |
 | 2020/05/19 | v3.5.0 | Support [Withdraw](auth/withdraw.md) and [Withdraw status](auth/get-withdraw.md) API |
