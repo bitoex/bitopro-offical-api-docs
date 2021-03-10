@@ -436,7 +436,8 @@
             "minimumTradingAmount": "20",
             "maximumTradingAmount": "100000",
             "dailyCumulativeMaximumAmount": "300000",
-            "remarks": ""
+            "remarks": "",
+            "protocol": "ERC20"
         },
         {
             "currency": "RPC",
