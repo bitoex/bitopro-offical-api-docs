@@ -36,6 +36,7 @@
 * `2`:  Completed
 * `3`:  Completed \(Partial deal\)
 * `4`:  Cancelled
+* `6`:  Post-only Cancelled
 
 ## Fee fields
 
