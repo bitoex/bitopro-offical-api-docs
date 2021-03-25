@@ -31,7 +31,9 @@
 * [Websocket](v3-1/ws/README.md)
   * [WebSocket Streams for BitoPro](v3-1/ws/ws.md)
 
-## v2
+## ~v2~
+**v2 End-of-life (2021-06-30). Please do not use v2 any more.**
+
 
 * [Rest](v2/rest/README.md)
   * [Open](v2/rest/open/README.md)
