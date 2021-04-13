@@ -33,7 +33,8 @@
   "total": "0",
   "seq": "BITOETH3946175424",
   "stopPrice": "0.002",
-  "condition": ">="
+  "condition": ">=",
+  "timeInForce": "GTC"
 }
 ```
 

@@ -44,7 +44,8 @@ Fetches all orders of specific pair within 90 days, and ordered by create time.
       "createdTimestamp": 1570591525592,
       "updatedTimestamp": 1570601523551,
       "total": "0",
-      "type": "LIMIT"
+      "type": "LIMIT",
+      "timeInForce": "GTC"
     },
     {
       "action": "BUY",
@@ -64,7 +65,8 @@ Fetches all orders of specific pair within 90 days, and ordered by create time.
       "stopPrice": "10",
       "timestamp": 1570591225827,
       "total": "0",
-      "type": "STOP_LIMIT"
+      "type": "STOP_LIMIT",
+      "timeInForce": "GTC"
     },
     {
       "action": "BUY",
@@ -85,7 +87,8 @@ Fetches all orders of specific pair within 90 days, and ordered by create time.
       "createdTimestamp": 1570591525690,
       "updatedTimestamp": 1570601523550,
       "total": "0",
-      "type": "STOP_LIMIT"
+      "type": "STOP_LIMIT",
+      "timeInForce": "GTC"
     }
   ]
 }
