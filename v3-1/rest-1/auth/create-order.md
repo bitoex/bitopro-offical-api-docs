@@ -15,15 +15,16 @@
 
 ## Request body
 
-| Field | Type | Required | Description |
-| :--- | :--- | :--- | :--- |
-| action | string | Yes | The action type of the order, should only be `BUY` or `SELL`. |
-| amount | string | Yes | The amount of the order for the trading pair, please follow the [link](https://www.bitopro.com/fees) to see the limitations. |
-| price | string | Yes | The price of the order for the trading pair. |
-| timestamp | integer | Yes | The client timestamp in millisecond. |
-| type | string | Yes | The order type, should only be `LIMIT`, `MARKET` or `STOP_LIMIT`. |
-| stopPrice | string | No | The price to trigger stop limit order, **only required** when `type` is `STOP_LIMIT`. |
-| condition | string | No | The condition to match stop price, **only required** when `type` is `STOP_LIMIT`. Can only be `>=` or `<=`. |
+| Field | Type | Required | Description | Default | Range | Example |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| action | string | Yes | The action type of the order. | | `BUY`, `SELL` | SELL |
+| amount | string | Yes | The amount of the order for the trading pair, please follow the [link](https://www.bitopro.com/fees) to see the limitations. | | | 123.25 |
+| price | string | Yes | The price of the order for the trading pair. | | | btc_twd |
+| timestamp | integer | Yes | The client timestamp in millisecond. | | | 1504262258000 |
+| type | string | Yes | The order type. | | `LIMIT`, `MARKET`, `STOP_LIMIT` | MARKET |
+| stopPrice | string | No | The price to trigger stop limit order, **only required** when `type` is `STOP_LIMIT`. | | | 3564.2563 |
+| condition | string | No | The condition to match stop price, **only required** when `type` is `STOP_LIMIT`. | | `>=`, `<=` | <= |
+| timeInForce | string | No | Time in force condition for orders. If type is `MARKET`, this will always be `GTC`. | `GTC` | `GTC`, `POST_ONLY` | POST_ONLY |
 
 ### Response sample
 
@@ -33,7 +34,8 @@
   "action": "BUY",
   "amount": "250",
   "price": "0.000075",
-  "timestamp": 1504262258000
+  "timestamp": 1504262258000,
+  "timeInForce": "POST_ONLY"
 }
 ```
 
