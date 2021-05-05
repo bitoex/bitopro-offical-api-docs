@@ -2,6 +2,7 @@
 
 | Date | Version | Description |
 | :--- | :--- | :--- |
+| 2021/03/23 |  | **Announcement for EOL of v2 on 2021/06/30** |
 | 2019/10/15 |  | Version 2 API will not be updated unless for bugs and security issues. |
 | 2019/10/15 | v2.8.0 | Deprecate [Get order history](changelog.md) API |
 | 2019/09/17 | v2.8.0 | Add [Trading hitory](changelog.md) API for fetching candlestick data. |
