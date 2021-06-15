@@ -21,34 +21,37 @@ Allow `60` requests per minute per IP.
 
 ## Parameters
 
-| Field | Type | Required | Description |
-| :--- | :--- | :--- | :--- |
-| action | string | Yes | The action type of the order, should only be `BUY` or `SELL`. |
-| amount | string | Yes | The amount of the order for the trading pair, please follow the [link](https://www.bitopro.com/fees) to see the limitations. |
-| price | string | Yes | The price of the order for the trading pair. |
-| timestamp | integer | Yes | The client timestamp in millisecond. |
+| Field | Type | Required | Description | Default | Range | Example |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| action | string | Yes | The action type of the order, should only be `BUY` or `SELL`. | | `BUY` or `SELL` | `BUY` |
+| amount | string | Yes | The amount of the order for the trading pair, please follow the [link](https://www.bitopro.com/fees) to see the limitations. | | > 0 |  100 |
+| price | string | Yes | The price of the order for the trading pair. | | > 0 | 10 |
+| timestamp | integer | Yes | The client timestamp in millisecond. | | | 1504262258000 |
 | type | string | Yes | The order type, should only be `LIMIT`, `MARKET`. |
 | timeInForce | string | No | Time in force condition for orders. If type is `MARKET`, this will always be `GTC`. | `GTC` | `GTC`, `POST_ONLY` | POST_ONLY |
-|  |  |  |  |
+| pair | string | Yes |  | | | `BTC_TWD` |
 
 ## Request sample
 
 ```javascript
-[{
-  pair: "BTC_TWD",
-  action: "BUY",
-  type: "LIMIT",
-  price: "210000",
-  amount: "1",
-  timestamp: 1504262258000,
-  timeInForce: "GTC"
-}, {
-  pair: "BTC_TWD",
-  action: "SELL",
-  type: "MARKET",
-  amount: "2",
-  timestamp: 1504262258000
-}]
+[
+  {
+    pair: "BTC_TWD",
+    action: "BUY",
+    type: "LIMIT",
+    price: "210000",
+    amount: "1",
+    timestamp: 1504262258000,
+    timeInForce: "GTC"
+  }, 
+  {
+    pair: "BTC_TWD",
+    action: "SELL",
+    type: "MARKET",
+    amount: "2",
+    timestamp: 1504262258000
+  }
+]
 ```
 
 ### Response sample
