@@ -23,7 +23,7 @@ Allow `60` requests per minute per IP.
 
 | Field | Type | Required | Description | Default | Range | Example |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| pair |  | string | Yes | The trading pair in format ${BASE}\_${QUOTE}, Please follow the [link](https://www.bitopro.com/fees) to check the pair list. |  | bito\_eth |
+| pair | string | Yes | The trading pair in format ${BASE}\_${QUOTE}, Please follow the [link](https://www.bitopro.com/fees) to check the pair list. | | | bito\_eth |
 | action | string | Yes | The action type of the order, should only be `BUY` or `SELL`. | | `BUY` or `SELL` | `BUY` |
 | amount | string | Yes | The amount of the order for the trading pair, please follow the [link](https://www.bitopro.com/fees) to see the limitations. | | > 0 |  100 |
 | price | string | Yes | The price of the order for the trading pair. | | > 0 | 10 |
