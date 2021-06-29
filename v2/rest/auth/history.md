@@ -3,6 +3,10 @@
 # V2 End-of-life (2021-06-30)
 **We have already stopped any mantainance support on v2 API. We have scheduled to remove v2 API completely on 2021-06-30. Please migrate your program to you v3 ASAP.**
 
+## Migrate to v3
+
+You can use `v3 Get all orders` API to get orders of specific pair. If you want to get orders of different pairs, you need to send multiple requests.
+
 ## `GET` /orders/history
 
 ## Parameters
