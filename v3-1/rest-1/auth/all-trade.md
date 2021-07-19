@@ -14,7 +14,7 @@
 |  |  | endTimestamp | integer | No | The end timestamp in unix timestap (miliesceond). | present timestamp  | | 1592203563000 |
 |  |  | orderId | string | No | The id of the order.	 | | | 6995795641 |
 |  |  | tradeId | string | No | The id of the first trade in the response. It can serve as an offset when it's sent as an id of the last data from the previous response. | | | 8473494907 |
-|  |  | limit | integer | No | The limit for the response. | 100 | min:100, max:1000 | 100 |
+|  |  | limit | integer | No | The limit for the response. | 100 | min:0, max:1000 | 100 |
 
 ### Response sample
 
