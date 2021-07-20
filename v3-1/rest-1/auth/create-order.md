@@ -19,7 +19,7 @@
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | action | string | Yes | The action type of the order. | | `BUY`, `SELL` | SELL |
 | amount | string | Yes | The amount of the order for the trading pair, please follow the [link](https://www.bitopro.com/fees) to see the limitations. | | | 123.25 |
-| price | string | Yes | The price of the order for the trading pair. | | | btc_twd |
+| price | string | Yes | The price of the order for the trading pair. | | | 0.000075  |
 | timestamp | integer | Yes | The client timestamp in millisecond. | | | 1504262258000 |
 | type | string | Yes | The order type. | | `LIMIT`, `MARKET`, `STOP_LIMIT` | MARKET |
 | stopPrice | string | No | The price to trigger stop limit order, **only required** when `type` is `STOP_LIMIT`. | | | 3564.2563 |
