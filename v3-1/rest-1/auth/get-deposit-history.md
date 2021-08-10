@@ -17,7 +17,8 @@
 |  |  | statuses | string | No | The status of the deposit. It is multiple values that are concatenated by a comma. |  | | CANCELLED,WAIT_PROCESS |
 
 - The start timestamp must be less than the end timestamp and the time between the start and end timestamp must be less and equal to 90 days.
-- The deposit status could be `PROCESSING`,`COMPLETE`,`EXPIRED`,`INVALID`,`WAIT_PROCESS`,`CANCELLED`.
+- The deposit cryptocurrency status could be `PROCESSING`,`COMPLETE`,`EXPIRED`,`INVALID`,`WAIT_PROCESS`,`CANCELLED`.
+- The deposit twd status could be `PROCESSING`,`COMPLETE`,`INVALID`,`WAIT_PROCESS`,`CANCELLED`, `FAILED`.
 
 ## Response sample
 

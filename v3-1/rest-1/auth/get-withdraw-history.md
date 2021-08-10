@@ -17,7 +17,8 @@
 |  |  | statuses | string | No | The status of the withdraw. It is multiple values that are concatenated by a comma. |  | | CANCELLED,WAIT_PROCESS |
 
 - The start timestamp must be less than the end timestamp and the time between the start and end timestamp must be less and equal to 90 days.
-- The withdraw status could be `PROCESSING`,`COMPLETE`,`EXPIRED`,`INVALID`,`WAIT_PROCESS`,`WAIT_CONFIRMATION`,`EMAIL_VERIFICATION`,`CANCELLED`.
+- The withdraw cryptocurrency status could be `PROCESSING`,`COMPLETE`,`EXPIRED`,`INVALID`,`WAIT_PROCESS`,`WAIT_CONFIRMATION`,`EMAIL_VERIFICATION`,`CANCELLED`.
+- The withdraw twd status could be `PROCESSING`,`COMPLETE`,`INVALID`,`WAIT_PROCESS`,`EMAIL_VERIFICATION`,`CANCELLED`, `FAILED`.
 
 ## Response sample
 
