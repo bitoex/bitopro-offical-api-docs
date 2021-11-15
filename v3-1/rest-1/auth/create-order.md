@@ -25,6 +25,7 @@
 | stopPrice | string | No | The price to trigger stop limit order, **only required** when `type` is `STOP_LIMIT`. | | | 3564.2563 |
 | condition | string | No | The condition to match stop price, **only required** when `type` is `STOP_LIMIT`. | | `>=`, `<=` | <= |
 | timeInForce | string | No | Time in force condition for orders. If type is `MARKET`, this will always be `GTC`. | `GTC` | `GTC`, `POST_ONLY` | POST_ONLY |
+| clientID | int | NO | Ths information help users distinguish their orders. | | 1 ~ 2147483647  | 12345 |
 
 ### Response sample
 
@@ -35,7 +36,8 @@
   "amount": "250",
   "price": "0.000075",
   "timestamp": 1504262258000,
-  "timeInForce": "POST_ONLY"
+  "timeInForce": "POST_ONLY",
+  "clientID": 12345
 }
 ```
 
