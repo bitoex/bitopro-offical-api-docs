@@ -22,7 +22,7 @@
   "avgExecutionPrice": "0",
   "action": "BUY",
   "type": "STOP_LIMIT",
-  "timestamp": 1571032129185,
+  "timestamp": 1571032129185, // deprecated, using updatedTimestamp
   "status": -1,
   "originalAmount": "1000",
   "remainingAmount": "1000",
@@ -34,7 +34,9 @@
   "seq": "BITOETH3946175424",
   "stopPrice": "0.002",
   "condition": ">=",
-  "timeInForce": "GTC"
+  "timeInForce": "GTC",
+  "createdTimestamp": 1571032128185,
+  "updatedTimestamp": 1571032129185
 }
 ```
 
