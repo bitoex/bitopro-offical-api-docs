@@ -18,7 +18,7 @@ Fetches all orders of specific pair within 90 days, and ordered by create time.
 |  |  | status | int | No | Filter order base on specific status. Take precedence over `statusKind`. |  | See [status](../rest.md#order-status) | -1 |
 |  |  | orderId | string | No | If specified, list starts with order with id >= `orderId`. | | | 6432441674 |
 |  |  | limit | integer | No | The number of records to retrieve. | 100 | 1 ~ 1000 | 100 |
-| | | clientID | integer | No | Ths information help users distinguish their orders. | | 1 ~ 2147483647 | 12345 |
+| | | clientId | integer | No | Ths information help users distinguish their orders. | | 1 ~ 2147483647 | 12345 |
 
 
 `startTimstamp` and `endTimestamp` can only be 90 days apart. If range greater than 90 days, parameter will be adjusted accordingly and behavior is not defined. If both are not defined, `startTimestamp` is defined as 90 days before from current time, and `endTimestamp` is defined as current time.
@@ -46,7 +46,8 @@ Fetches all orders of specific pair within 90 days, and ordered by create time.
       "updatedTimestamp": 1570601523551,
       "total": "0",
       "type": "LIMIT",
-      "timeInForce": "GTC"
+      "timeInForce": "GTC",
+      "clientId": 123
     },
     {
       "action": "BUY",
@@ -67,7 +68,8 @@ Fetches all orders of specific pair within 90 days, and ordered by create time.
       "timestamp": 1570591225827,
       "total": "0",
       "type": "STOP_LIMIT",
-      "timeInForce": "GTC"
+      "timeInForce": "GTC",
+      "clientId": 123
     },
     {
       "action": "BUY",
@@ -89,7 +91,8 @@ Fetches all orders of specific pair within 90 days, and ordered by create time.
       "updatedTimestamp": 1570601523550,
       "total": "0",
       "type": "STOP_LIMIT",
-      "timeInForce": "GTC"
+      "timeInForce": "GTC",
+      "clientId": 123
     }
   ]
 }
