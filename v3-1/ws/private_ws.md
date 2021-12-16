@@ -17,15 +17,11 @@
 
 ## Authentication For Private Websocket Connection
 
-| Security scheme | Query path parameter |
+| Security scheme | Header parameter |
 | :--- | :--- |
-| API Key | api-key |
-| Payload | payload |
-| Signature | sig |
- 
-```
- wss://stream.bitopro.com:9443/ws/{path}?api-key=yourapikey&payload=yourpayload&sig=yoursignature
-```
+| API Key | X-BITOPRO-APIKEY |
+| Payload | X-BITOPRO-PAYLOAD |
+| Signature | X-BITOPRO-SIGNATURE |
 
 You can find how to create payload and signature from [authentication document.](../rest-1/authentication.md)
 
