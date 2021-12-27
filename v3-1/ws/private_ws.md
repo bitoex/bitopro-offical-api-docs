@@ -52,7 +52,6 @@ This channel push message with opened orders.
 | 1 | clientId | int | |
 | 1 | stopPrice | string | |
 | 1 | condition | string | stop limit trigger condition |
-| 1 | condition | string | stop limit trigger condition |
  
 
 * URL
@@ -78,6 +77,8 @@ GET wss://stream.bitopro.com:9443/ws/v1/pub/auth/orders
                 "action": "SELL",
                 "type": "LIMIT",
                 "timestamp": 1639386803663,
+                "updatedTimestamp": 1639386803663,
+                "createdTimestamp": 1639386803663,
                 "status": 0,
                 "originalAmount": "0.02",
                 "remainingAmount": "0.02",
@@ -100,6 +101,8 @@ GET wss://stream.bitopro.com:9443/ws/v1/pub/auth/orders
                 "action": "BUY",
                 "type": "LIMIT",
                 "timestamp": 1638258713957,
+                "updatedTimestamp": 1639386803663,
+                "createdTimestamp": 1639386803663,
                 "status": 0,
                 "originalAmount": "0.01",
                 "remainingAmount": "0.01",
