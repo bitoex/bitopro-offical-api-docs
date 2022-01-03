@@ -11,7 +11,7 @@
 
 * The base endpoint is: **wss://stream.bitopro.com:9443/ws**.
 * Streams can be access either in `single pair` or `combinded pairs`.
-* All pairs for streams are **uppercase** and with **underscore** between base and quote.
+* All pairs for streams are **uppercase** and with **underscore** between base and quote expect the active order stream.
 * The websocket server will send a `ping frame` every 20 seconds. If the websocket server doesn't receive a `pong frame` back from the client within a 5 seconds period, the connection will be disconnected.
 * We'll always push the `latest` data when you successfully get the websocket connection.
 
