@@ -30,7 +30,7 @@ Allow `60` requests per minute per IP.
 | timestamp | integer | Yes | The client timestamp in millisecond. | | | 1504262258000 |
 | type | string | Yes | The order type, should only be `LIMIT`, `MARKET`. |
 | timeInForce | string | No | Time in force condition for orders. If type is `MARKET`, this will always be `GTC`. | `GTC` | `GTC`, `POST_ONLY` | POST_ONLY |
-| clientId | integer | NO | Ths information help users distinguish their orders. | | 1 ~ 2^31-1(2147483647)  | 12345 |
+| clientId | integer | No | Ths information help users distinguish their orders. | | 1 ~ 2^31-1(2147483647)  | 12345 |
 
 
 ## Request sample
