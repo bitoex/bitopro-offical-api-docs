@@ -38,23 +38,23 @@ Note: You will receive active orders from all trading pairs when you build a web
 | 0 | Field | Type | Description |
 | :--- | :--- | :--- | :--- |
 | 0 | event | string | String literal for event name |
-| 0 | timestamp | integer | deprecated used updatedTimestamp |
+| 0 | timestamp | integer | Unix Timestamp in milliseconds \(seconds \* 1000\) |
 | 0 | datetime | string | ISO8601 datetime string with milliseconds |
-| 1 | id | int | |
+| 1 | id | integer | |
 | 1 | action | string | BUY or SELL |
 | 1 | price | string | |
 | 1 | avgExecutionPrice | string | |
 | 1 | type | string | LIMIT, Market or STOP_LIMIT  |
 | 1 | createdTimestamp | integer | Unix Timestamp in milliseconds \(seconds \* 1000\) |
 | 1 | updatedTimestamp | integer | Unix Timestamp in milliseconds \(seconds \* 1000\) |
-| 1 | status | int | [see order status](../rest-1/rest.md#order-status) |
+| 1 | status | integer | [see order status](../rest-1/rest.md#order-status) |
 | 1 | originalAmount | string | |
 | 1 | remainingAmount | string | |
 | 1 | executedAmount | string | |
-| 1 | clientId | int | |
+| 1 | clientId | integer | |
 | 1 | stopPrice | string | |
 | 1 | condition | string | stop limit trigger condition |
-| 1 | pair | string | Uppercase string underscore-delimited literal of a pair of currencies |
+| 1 | pair | string | lowercase string underscore-delimited literal of a pair of currencies |
 | 1 | fee | string | |
 | 1 | feeSymbol | string | |
 | 1 | bitoFee | string | bito currency fee |
@@ -137,9 +137,9 @@ This channel push message with account balance.
 | 0 | Field | Type | Description |
 | :--- | :--- | :--- | :--- |
 | 0 | event | string | String literal for event name |
-| 0 | timestamp | long integer | Unix Timestamp in milliseconds \(seconds \* 1000\) |
+| 0 | timestamp | integer | Unix Timestamp in milliseconds \(seconds \* 1000\) |
 | 0 | datetime | string | ISO8601 datetime string with milliseconds |
-| 1 | currency | string | |
+| 1 | currency | string | uppercase string |
 | 1 | amount | string | Total amount |
 | 1 | available | string | |
 | 1 | stake | string | |
