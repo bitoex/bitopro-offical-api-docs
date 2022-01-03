@@ -31,7 +31,7 @@ You can find how to create payload and signature from [authentication document.]
 
 This channel push message with opened orders.
 
-Note: You will receive active orders from all trading pairs when you build a websocket connection at first. After that, websocket server only push the active orders from single updated trading pair.
+Note: You will receive active orders from all trading pairs when you build a websocket connection at first. After that, websocket server only push the updated active orders from single trading pair.
 
 * Response
 
