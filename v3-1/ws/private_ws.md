@@ -36,15 +36,15 @@ This channel push message with opened orders.
 | 0 | Field | Type | Description |
 | :--- | :--- | :--- | :--- |
 | 0 | event | string | String literal for event name |
-| 0 | timestamp | long integer | Unix Timestamp in milliseconds \(seconds \* 1000\) |
+| 0 | timestamp | integer | deprecated used updatedTimestamp |
 | 0 | datetime | string | ISO8601 datetime string with milliseconds |
 | 1 | id | int | |
 | 1 | action | string | BUY or SELL |
 | 1 | price | string | |
 | 1 | avgExecutionPrice | string | |
 | 1 | type | string | LIMIT, Market or STOP_LIMIT  |
-| 1 | createdTimestamp | int | |
-| 1 | updatedTimestamp | int | |
+| 1 | createdTimestamp | integer | Unix Timestamp in milliseconds \(seconds \* 1000\) |
+| 1 | updatedTimestamp | integer | Unix Timestamp in milliseconds \(seconds \* 1000\) |
 | 1 | status | int | [see order status](../rest-1/rest.md#order-status) |
 | 1 | originalAmount | string | |
 | 1 | remainingAmount | string | |
@@ -52,6 +52,13 @@ This channel push message with opened orders.
 | 1 | clientId | int | |
 | 1 | stopPrice | string | |
 | 1 | condition | string | stop limit trigger condition |
+| 1 | pair | string | Uppercase string underscore-delimited literal of a pair of currencies |
+| 1 | fee | string | |
+| 1 | feeSymbol | string | |
+| 1 | bitoFee | string | bito currency fee |
+| 1 | total | string | total trading quote currency amount |
+| 1 | seq | string | order sequence number |
+| 1 | timeInForce | string | Time in force condition for orders. If type is `MARKET`, this will always be `GTC`. | `GTC` | `GTC`, `POST_ONLY` | POST_ONLY |
  
 
 * URL
