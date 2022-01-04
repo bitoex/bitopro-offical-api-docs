@@ -65,12 +65,12 @@ Note: You will receive active orders from all trading pairs when you build a web
 
 * URL
 
-`GET` **wss://stream.bitopro.com:9443/ws/v1/pub/auth/orders**
+`GET` **wss://stream.bitopro.com:9443/ws/v1/auth/orders**
 
 Sample
 
 ```javascript
-GET wss://stream.bitopro.com:9443/ws/v1/pub/auth/orders
+GET wss://stream.bitopro.com:9443/ws/v1/auth/orders
 
 {
     "event": "ACTIVE_ORDERS",
@@ -147,12 +147,12 @@ This channel push message with account balance.
 
 * URL
 
-`GET` **wss://stream.bitopro.com:9443/ws/v1/pub/auth/account-balance**
+`GET` **wss://stream.bitopro.com:9443/ws/v1/auth/account-balance**
 
 Sample
 
 ```javascript
-GET wss://stream.bitopro.com:9443/ws/v1/pub/auth/account-balance
+GET wss://stream.bitopro.com:9443/ws/v1/auth/account-balance
 
 {
     "event": "ACCOUNT_BALANCE",
