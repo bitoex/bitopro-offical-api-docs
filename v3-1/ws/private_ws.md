@@ -40,7 +40,7 @@ Note: You will receive active orders from all trading pairs when you build a web
 | 0 | event | string | String literal for event name |
 | 0 | timestamp | integer | Unix Timestamp in milliseconds \(seconds \* 1000\) |
 | 0 | datetime | string | ISO8601 datetime string with milliseconds |
-| 1 | id | integer | |
+| 1 | id | string | |
 | 1 | action | string | BUY or SELL |
 | 1 | price | string | |
 | 1 | avgExecutionPrice | string | |
