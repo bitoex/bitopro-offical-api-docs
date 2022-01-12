@@ -121,6 +121,7 @@ GET wss://stream.bitopro.com:9443/ws/v1/pub/auth/orders
                 "bitoFee": "0",
                 "total": "0",
                 "seq": "USDCTWD2310459465"
+                "timeInForce": "GTC",
                 "clientId": 1234
             }
         ]
