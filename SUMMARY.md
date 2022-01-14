@@ -16,6 +16,7 @@
   * [Auth](v3-1/rest-1/auth/README.md)
     * [Get the account balance](v3-1/rest-1/auth/account-balance.md)
     * [Get all orders](v3-1/rest-1/auth/all-order.md)
+    * [Get all trades](v3-1/rest-1/auth/all-trade.md)
     * [Get order list](v3-1/rest-1/auth/order-list.md)
     * [Get an order](v3-1/rest-1/auth/get-order.md)
     * [Create an order](v3-1/rest-1/auth/create-order.md)
@@ -30,6 +31,7 @@
   * [Change Log](v3-1/rest-1/changelog.md)
 * [Websocket](v3-1/ws/README.md)
   * [WebSocket Streams for BitoPro](v3-1/ws/ws.md)
+  * [Private WebSocket Streams for BitoPro](v3-1/ws/private_ws.md)
 
 ## ~v2~
 **v2 End-of-life (2021-06-30). Please do not use v2 any more.**
