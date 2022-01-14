@@ -4,6 +4,10 @@
 
 If you send a request to /orders/all API. It will cancel all your active orders of all pairs.
 
+## Rate limit
+
+Allow `1` requests per second per IP.
+
 ## Parameters
 
 | Header | Path | Query | Type | Required | Description | Default | Range | Example |
