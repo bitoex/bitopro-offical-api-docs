@@ -2,7 +2,10 @@
 
 | Date | Version | Description |
 | :--- | :--- | :--- |
-| 2021/12/23 | v3.5.4 | [Cancel multiple orders](https://github.com/bitoex/bitopro-offical-api-docs/blob/master/v3-1/rest-1/auth/cancel-batch.md) and [Cancel all orders](https://github.com/bitoex/bitopro-offical-api-docs/blob/master/v3-1/rest-1/auth/cancel-all.md) to allow `1` requests per second per IP. |
+| 2021/01/20 | v3.5.5 | Add [private websocket streams](../ws/private_ws.md). |
+| 2021/01/20 | v3.5.5 | ClientId added to [Create Order](auth/create-order.md), [Create batch limit/market orders](auth/create-batch-limitmarket.md) and [All Orders](auth/all-order.md). |
+| 2021/12/23 | v3.5.4 | Add [All Trades](auth/all-trade.md) auth api. |
+| 2021/12/23 | v3.5.4 | [Cancel multiple orders](auth/cancel-batch.md) and [Cancel all orders](auth/cancel-all.md) to allow `1` requests per second per IP. |
 | 2021/04/13 | v3.5.3 | Post-only added to [Create Order](auth/create-order.md) and [Create batch limit/market orders](auth/create-batch-limitmarket.md) . New order `status` 6 for post-only cancel. |
 | 2021/01/21 | v3.5.2 | [All Orders](auth/all-order.md), parameter change. `statusKind` `Done` only include status 2 and 3. New parameter `status` added to retrieve single specified `status`. |
 | 2021/01/05 | v3.5.1 | Support [All Orders](auth/all-order.md), deprecated [Order List](auth/order-list.md) |
