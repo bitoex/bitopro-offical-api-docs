@@ -51,7 +51,6 @@ Note: You will receive active orders from all trading pairs when you build a web
 | 1 | originalAmount | string | |
 | 1 | remainingAmount | string | |
 | 1 | executedAmount | string | |
-| 1 | clientId | integer | |
 | 1 | stopPrice | string | |
 | 1 | condition | string | stop limit trigger condition |
 | 1 | pair | string | lowercase string underscore-delimited literal of a pair of currencies |
@@ -97,8 +96,7 @@ GET wss://stream.bitopro.com:9443/ws/v1/pub/auth/orders
                 "bitoFee": "0",
                 "total": "0",
                 "seq": "SOLUSDT3273528249",
-                "timeInForce": "GTC",
-                "clientId" 1
+                "timeInForce": "GTC"
             }
         ],
         "usdc_twd": [
@@ -121,8 +119,7 @@ GET wss://stream.bitopro.com:9443/ws/v1/pub/auth/orders
                 "bitoFee": "0",
                 "total": "0",
                 "seq": "USDCTWD2310459465"
-                "timeInForce": "GTC",
-                "clientId": 1234
+                "timeInForce": "GTC"
             }
         ]
     }
