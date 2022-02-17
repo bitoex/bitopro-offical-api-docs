@@ -31,6 +31,7 @@
   * [Change Log](v3-1/rest-1/changelog.md)
 * [Websocket](v3-1/ws/README.md)
   * [WebSocket Streams for BitoPro](v3-1/ws/ws.md)
+  * [WebSocket Private Streams for BitoPro](v3-1/ws/private_ws.md)
 
 ## ~v2~
 **v2 End-of-life (2021-06-30). Please do not use v2 any more.**

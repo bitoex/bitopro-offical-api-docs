@@ -2,6 +2,7 @@
 
 | Date | Version | Description |
 | :--- | :--- | :--- |
+| 2022/02/16 | v3.5.5 | Add [Private Websocket Stream](../ws/private_ws.md). |
 | 2021/12/23 | v3.5.4 | Add [All Trades](auth/all-trade.md) auth api. |
 | 2021/12/23 | v3.5.4 | [Cancel multiple orders](auth/cancel-batch.md) and [Cancel all orders](auth/cancel-all.md) to allow `1` requests per second per IP. |
 | 2021/04/13 | v3.5.3 | Post-only added to [Create Order](auth/create-order.md) and [Create batch limit/market orders](auth/create-batch-limitmarket.md) . New order `status` 6 for post-only cancel. |
