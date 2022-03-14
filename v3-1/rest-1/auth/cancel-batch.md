@@ -4,6 +4,10 @@
 
 Send a json format request to cancel multiple orders at a time.
 
+## Rate limit
+
+Allow `1` requests per second per IP.
+
 ## Parameters
 
 | Header | Path | Query | Type | Required | Description | Default | Range | Example |
