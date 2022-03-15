@@ -30,6 +30,7 @@ Allow `60` requests per minute per IP.
 | timestamp | integer | Yes | The client timestamp in millisecond. | | | 1504262258000 |
 | type | string | Yes | The order type, should only be `LIMIT`, `MARKET`. |
 | timeInForce | string | No | Time in force condition for orders. If type is `MARKET`, this will always be `GTC`. | `GTC` | `GTC`, `POST_ONLY` | POST_ONLY |
+| clientId | integer | No | This information help users distinguish their orders. | | 1 ~ 2147483647 | 12345 |
 
 
 ## Request sample
@@ -43,7 +44,8 @@ Allow `60` requests per minute per IP.
     price: "210000",
     amount: "1",
     timestamp: 1504262258000,
-    timeInForce: "GTC"
+    timeInForce: "GTC",
+    clientId: 123
   }, 
   {
     pair: "BTC_TWD",
@@ -65,7 +67,8 @@ Allow `60` requests per minute per IP.
     "price": "210000",
     "amount": "1",
     "timestamp": 1504262258000,
-    "timeInForce": "GTC"
+    "timeInForce": "GTC",
+    "clientId": 123
   }, {
     "orderId": 3234567891,
     "action": "SELL",
