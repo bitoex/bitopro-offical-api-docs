@@ -2,6 +2,7 @@
 
 | Date | Version | Description |
 | :--- | :--- | :--- |
+| 2022/04/28 | v3.5.7 | Add Percent for [CreateOrder API](./auth/create-order) |
 | 2022/03/15 | v3.5.6 | Add ClientID for [CreateOrder API](./auth/create-order) |
 | 2022/02/16 | v3.5.5 | Add [Private Websocket Stream](../ws/private_ws.md). |
 | 2021/12/23 | v3.5.4 | Add [All Trades](auth/all-trade.md) auth api. |
