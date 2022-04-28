@@ -26,6 +26,7 @@
 | condition | string | No | The condition to match stop price, **only required** when `type` is `STOP_LIMIT`. | | `>=`, `<=` | <= |
 | timeInForce | string | No | Time in force condition for orders. If type is `MARKET`, this will always be `GTC`. | `GTC` | `GTC`, `POST_ONLY` | POST_ONLY |
 | clientId | integer | No | This information help users distinguish their orders. | | 1 ~ 2147483647 | 12345 |
+| percentage | integer | No | The amount of the sell order which can be percentage of your balance. (e.g 1 mean 1%) | 1~100 | 100 |
 
 ### Response sample
 
