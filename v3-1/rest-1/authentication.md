@@ -41,7 +41,7 @@ const crypto = require('crypto')
 
 const apiKey = '[Your API key here]'
 const apiSecret = '[Your API secret here]'
-const baseUrl = 'https://api.bitopro.com/v2'
+const baseUrl = 'https://api.bitopro.com/v3'
 
 const url = '/accounts/balance'
 const nonce = Date.now()
