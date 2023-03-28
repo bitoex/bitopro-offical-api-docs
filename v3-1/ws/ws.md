@@ -19,7 +19,7 @@
 
 ### Order Book
 
-Order book pushed all data every second when updated. You can specifiy one or more pairs and the default limit is 5. Valid limit values are **1**, **5**, **10** or **20**.
+Order book pushed all data every second when updated. You can specifiy one or more pairs and the default limit is 5. Valid limit values are **1**, **5**, **10**, **20**, **30** or **50**.
 
 * Request
 
