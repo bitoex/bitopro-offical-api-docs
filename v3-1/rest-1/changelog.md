@@ -2,6 +2,7 @@
 
 | Date | Version | Description |
 | :--- | :--- | :--- |
+| 2023/03/28 | v3.5.9 | Add 50 limit for [OrderBook API](./open/order-book.md) and [OrderBook WS](../ws/ws.md) |
 | 2022/05/23 | v3.5.8 | Add BSC Protocol for [Withdrawal API](./auth/withdraw.md) |
 | 2022/04/28 | v3.5.7 | Add Percent for [CreateOrder API](./auth/create-order) |
 | 2022/03/15 | v3.5.6 | Add ClientID for [CreateOrder API](./auth/create-order) |
