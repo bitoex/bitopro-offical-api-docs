@@ -73,4 +73,6 @@
 | [Get an order](auth/get-order.md) | `GET` /orders/{pair}/{orderId} | [https://api.bitopro.com/v3/orders/bito\_twd/123456789](https://api.bitopro.com/v3/orders/bito_twd/123456789) |
 | [Get Withdraw Information](auth/get-withdraw.md) | `GET` /wallet/withdraw/{currency}/{serial} | [https://api.bitopro.com/v3/wallet/withdraw/twd/123456](https://api.bitopro.com/v3/wallet/withdraw/123456) |
 | [Withdraw](auth/withdraw.md) | `POST` /wallet/withdraw/{currency} | [https://api.bitopro.com/v3/wallet/withdraw/twd](https://api.bitopro.com/v3/wallet/withdraw/twd) |
+| [Get Deposit History Information](auth/get-deposit-history.md) | `GET` /wallet/depositHistory/{currency} | [https://api.bitopro.com/v3/wallet/depositHistory/twd](https://api.bitopro.com/v3/wallet/depositHistory/twd) |
+| [Get Withdraw History Information](auth/get-withdraw-history.md) | `GET` /wallet/withdrawHistory/{currency} | [https://api.bitopro.com/v3/wallet/withdrawHistory/twd](https://api.bitopro.com/v3/wallet/withdrawHistory/twd) |
 
