@@ -76,7 +76,7 @@ Note that the public key and private key are typically only displayed once, so m
 
 An API key and secret are employed to authenticate your account's identity and grant authorization for account operations through programming scripts. It is imperative that programmers adhere to the prescribed protocol to ensure the security of your API requests when managing your BitoPro account.
 
-> Note : Please make sure you comprehend the following details thoroughly before utilizing programming scripts for account operations.
+> Note : Please make sure you comprehend the following details thoroughly before utilizing programming scripts for api operations.
 #### API Security Protocol Procedure
 1. Generate API key and secret by following [Web Create Api Key SOP](#web-create-api-key-sop).
 2. Check [Authentication Header Parameters](#request-authentication-header-parameters) to understand combination of request header.
@@ -191,39 +191,39 @@ For the WebSocket API, the base endpoint is `wss://stream.bitopro.com:443/ws`.
 # Restful API List
 ## Public Restful API
 ### Market Data Endpoints
-*   [Get Limitations and Fees](restful-api_V3.md/#get-the-limitations-and-fees)
-*   [Get OrderBook Data](restful-api_V3.md/#get-order-book)
-*   [Get Ticker Data](restful-api_V3.md/#get-ticker-data)
-*   [Get Trading Pair Info](restful-api_V3.md/#get-trading-pair-info)
-*   [List Trades Data](restful-api_V3.md/#list-trades-data)
-*   [List OHLC Data](restful-api_V3.md/#list-ohlc-data)
-*   [List Currencies](restful-api_V3.md/#list-currencies)
+*   [Get Limitations and Fees](./api/v3/public/get_limitations_and_fees.md)
+*   [Get OrderBook Data](./api/v3/public/get_orderbook_data.md)
+*   [Get Ticker Data](./api/v3/public/get_ticker_data.md)
+*   [Get Trading Pair Info](./api/v3/public/get_trading_pair_info.md)
+*   [List Trades Data](./api/v3/public/get_trades_data.md)
+*   [List OHLC Data](./api/v3/public/get_ohlc_data.md)
+*   [List Currencies](./api/v3/public/get_currency_info.md)
 ## Private Restful API
 ### Order Endpoints
-*   [Create An Order](restful-api_V3.md/#create-an-order)
-*   [Create Batch Orders](restful-api_V3.md/#create-batch-orders)
-*   [Cancel Batch Orders](restful-api_V3.md/#cancel-batch-orders)
-*   [Cancel All Orders](restful-api_V3.md/#cancel-all-orders)
-*   [Cancel An Order](restful-api_V3.md/#cancel-an-order)
-*   [Get An Order Data](restful-api_V3.md/#get-an-order-data)
-*   [List Orders Data](restful-api_V3.md/#list-orders-data)
-*   [List Trades]()
+*   [Create An Order](./api/v3/private/create_an_order.md)
+*   [Create Batch Orders](./api/v3/private/create_batch_orders.md)
+*   [Cancel Batch Orders](./api/v3/private/cancel_batch_orders.md)
+*   [Cancel All Orders](./api/v3/private/cancel_all_orders.md)
+*   [Cancel An Order](./api/v3/private/cancel_an_order.md)
+*   [Get An Order Data](./api/v3/private/get_an_order_data.md)
+*   [List Orders Data](./api/v3/private/get_orders_data.md)
+*   [List Trades](./api/v3/private/get_trades_data.md)
 ### Account Endpoints
-*   [Get User Balance](restful-api_V3.md/#get-user-balance)
+*   [Get User Balance](./api/v3/private/get_account_balance.md)
 ### Wallet Endpoints
-*   [List Deposit Invoices Data](restful-api_V3.md/#list-deposit-invoices-data)
-*   [List Withdraw Invoices Data](restful-api_V3.md/#list-withdraw-invoices-data)
-*   [Get A Withdraw Invoice](restful-api_V3.md/#get-a-withdraw-invoice)
-*   [Create Withdraw Invoice](restful-api_V3.md/#create-withdraw-invoice)
+*   [List Deposit Invoices Data](./api/v3/private/get_deposit_invoices_data.md)
+*   [List Withdraw Invoices Data](./api/v3/private/get_withdraw_invoices_data.md)
+*   [Get A Withdraw Invoice](./api/v3/private/get_an_withdraw_invoice_data.md)
+*   [Create Withdraw Invoice](./api/v3/private/create_an_withdraw_invoice.md)
 
 ## Websocket Stream List
 ## Public WebSocket Stream
-*   [OrderBook Stream](web-socket-api_V3.md/#orderbook-stream)
-*   [Ticker Data Stream](web-socket-api_V3.md/#ticker-data-stream)
-*   [Trade Stream](web-socket-api_V3.md/#trade-stream)
+*   [OrderBook Stream](./ws/public/order_book_stream.md)
+*   [Ticker Data Stream](./ws/public/ticker_stream.md)
+*   [Trade Stream](./ws/public/trade_stream.md)
 ## Private WebSocket Stream
-*   [Open Orders Stream](web-socket-api_V3.md/#open-orders-stream)
-*   [History Orders Stream](web-socket-api_V3.md/#history-orders-stream)
-*   [Account Balance Stream](web-socket-api_V3.md/#account-balance-stream)
+*   [Open Orders Stream](./ws/private/open_orders_stream.md)
+*   [History Orders Stream](./ws/private/history_orders_stream.md)
+*   [Account Balance Stream](./ws/private/user_balance_stream.md)
 
 
