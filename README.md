@@ -35,7 +35,7 @@
         *   [Trade Tools SDK (免責)](./LICENSE)
     *   [Contact Us](#contact-us)
         *   [Support](#support)
-        *   [Q&A](#qa)
+        *   [FAQ](#faq)
 *   [General Info](#general-info)
     *   [General API Information](#general-info)
         *   [API Endpoint & Versioning](#api-endpoint)
@@ -46,11 +46,11 @@
     *   [Data Model Information](./model.md)
 *   [Restful API List](#restful-api-list)
     *   [Public API List](#public-restful-api)
-        *   [Market Data Endpoint](#market-data-endpoint)
+        *   [Market Data Endpoints](#market-data-endpoints)
     *   [Private API List](#private-restful-api)
-        *   [Order Endpoint](#order-endpoint)
-        *   [Account Endpoint](#account-endpoint)
-        *   [Wallet Endpoint](#wallet-endpoint)
+        *   [Order Endpoints](#order-endpoints)
+        *   [Account Endpoints](#account-endpoints)
+        *   [Wallet Endpoints](#wallet-endpoints)
 *   [Websocket Stream List](#websocket-stream-list)
     *   [Public Websocket Stream List](#public-websocket-stream)
     *   [Private Websocket Stream List](#private-websocket-stream)
@@ -190,7 +190,7 @@ For the WebSocket API, the base endpoint is `wss://stream.bitopro.com:443/ws`.
 
 # Restful API List
 ## Public Restful API
-### Market Data Endpoint
+### Market Data Endpoints
 *   [Get Limitations and Fees](restful-api_V3.md/#get-the-limitations-and-fees)
 *   [Get OrderBook Data](restful-api_V3.md/#get-order-book)
 *   [Get Ticker Data](restful-api_V3.md/#get-ticker-data)
@@ -223,6 +223,7 @@ For the WebSocket API, the base endpoint is `wss://stream.bitopro.com:443/ws`.
 *   [Trade Stream](web-socket-api_V3.md/#trade-stream)
 ## Private WebSocket Stream
 *   [Open Orders Stream](web-socket-api_V3.md/#open-orders-stream)
+*   [History Orders Stream](web-socket-api_V3.md/#history-orders-stream)
 *   [Account Balance Stream](web-socket-api_V3.md/#account-balance-stream)
 
 
