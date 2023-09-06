@@ -33,9 +33,6 @@
         *   [Golang](#golang)
         *   [Python](#python)
         *   [Trade Tools SDK (免責)](./LICENSE)
-    *   [Contact Us](#contact-us)
-        *   [Support](#support)
-        *   [FAQ](#faq)
 *   [General Info](#general-info)
     *   [General API Information](#general-info)
         *   [API Endpoint & Versioning](#api-endpoint)
@@ -54,6 +51,9 @@
 *   [Websocket Stream List](#websocket-stream-list)
     *   [Public Websocket Stream List](#public-websocket-stream)
     *   [Private Websocket Stream List](#private-websocket-stream)
+*   [Contact Us](#contact-us)
+    *   [Support](#support)
+    *   [FAQ](#faq)
 
 # Getting Started
 
@@ -123,37 +123,6 @@ The hex digest of an HMAC-SHA384 hash where the message is your **payload**, and
 You can obtain the golang sample from the following [link](https://github.com/bitoex/bitopro-api-go.git).
 ### Python
 You can obtain the python sample from the following [link](https://github.com/bitoex/bitopro-api-python.git).
-
-## Contact us
-### Support
-  - support@bitopro.com
-  - [Offical Telegram](https://t.me/BitoProOfficial)
-  - [API Telegram](https://t.me/bitopro_api)
-
-### FAQ
-* API KEY
-  * Q1: How can I authenticate with the BitoPro API?
-    - A1: Authentication requires providing X-BITOPRO-APIKEY, X-BITOPRO-PAYLOAD, and X-BITOPRO-SIGNATURE in the headers of the HTTP request. The X-BITOPRO-APIKEY is your API key, while the X-BITOPRO-PAYLOAD and X-BITOPRO-SIGNATURE are the results of HMAC SHA384 signing using your API secret.
-
-  * Q2: Where can I find the documentation for the BitoPro API?
-    - A2: You can find all the details about the API in BitoPro's official API documentation.
-
-  * Q3: How do I generate an API key for the BitoPro API?
-    - A3: You can refer to this [link](#web-create-api-key-sop).
-
-  * Q4: What functions does the BitoPro API support?
-    - A4: The BitoPro API supports many features, including but not limited to viewing market data, managing transactions, checking account balance, and initiating withdrawals. The specific functionalities depend on the settings of your API key.
-
-* API Library
-  * Q5: The websocket account balance pushes all currencies each time. Is there a way to only push changes?
-    - A5: At present, all currencies are pushed. In the next version, only the changed currencies will be pushed.
-
-  * Q6: Does the websocket currently push user transaction reports?
-    - A6: Not yet, but this feature will be added in the next version.
-
-  * Q7: How can I set up the Bitopro API trading environment using other programming languages?
-    - A7: Currently, examples and environments for applications in other languages can be referred to at this link.
-
 
 # General Info
 ## API Endpoint
@@ -227,3 +196,32 @@ For the WebSocket API, the base endpoint is `wss://stream.bitopro.com:443/ws`.
 *   [Account Balance Stream](./ws/private/user_balance_stream.md)
 
 
+# Contact us
+## Support
+  - support@bitopro.com
+  - [Offical Telegram](https://t.me/BitoProOfficial)
+  - [API Telegram](https://t.me/bitopro_api)
+
+## FAQ
+* API KEY
+  * Q1: How can I authenticate with the BitoPro API?
+    - A1: Authentication requires providing X-BITOPRO-APIKEY, X-BITOPRO-PAYLOAD, and X-BITOPRO-SIGNATURE in the headers of the HTTP request. The X-BITOPRO-APIKEY is your API key, while the X-BITOPRO-PAYLOAD and X-BITOPRO-SIGNATURE are the results of HMAC SHA384 signing using your API secret.
+
+  * Q2: Where can I find the documentation for the BitoPro API?
+    - A2: You can find all the details about the API in BitoPro's official API documentation.
+
+  * Q3: How do I generate an API key for the BitoPro API?
+    - A3: You can refer to this [link](#web-create-api-key-sop).
+
+  * Q4: What functions does the BitoPro API support?
+    - A4: The BitoPro API supports many features, including but not limited to viewing market data, managing transactions, checking account balance, and initiating withdrawals. The specific functionalities depend on the settings of your API key.
+
+* API Library
+  * Q5: The websocket account balance pushes all currencies each time. Is there a way to only push changes?
+    - A5: At present, all currencies are pushed. In the next version, only the changed currencies will be pushed.
+
+  * Q6: Does the websocket currently push user transaction reports?
+    - A6: Not yet, but this feature will be added in the next version.
+
+  * Q7: How can I set up the Bitopro API trading environment using other programming languages?
+    - A7: Currently, examples and environments for applications in other languages can be referred to at this link.
