@@ -2,7 +2,7 @@
 
 Get a list of the most recent trades for the given symbol.
 
-If you require real-time updates or a high-frequency trading environment, we recommend using the websocket trade api. For more details, please refer to this [link](web-socket-api_V3.md/#trade-stream).
+If you require real-time updates or a high-frequency trading environment, we recommend using the websocket trade api. For more details, please refer to this [link](../../../ws/public/trade_stream.md).
 
 # Api Request
 

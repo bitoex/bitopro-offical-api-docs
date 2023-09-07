@@ -2,7 +2,7 @@
 
 The ticker provides a high-level overview of the state of the market. It displays the current best bid and ask prices, along with the last traded price. Additionally, it includes information about the daily trading volume and how much the price has moved over the last day.
 
-> If you require real-time updates or a high-frequency trading environment, we recommend using the websocket ticker data api. For more details, please refer to this [link](web-socket-api_V3.md/#ticker-data-stream).
+> If you require real-time updates or a high-frequency trading environment, we recommend using the websocket ticker data api. For more details, please refer to this [link](../../../ws/public/ticker_stream.md).
 
 # Api Request
 

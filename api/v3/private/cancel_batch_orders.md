@@ -1,5 +1,7 @@
 # Cancel Batch Orders
 
+Cancel multiple orders by given group of order ids.
+
 # Api Request:
 **`PUT` /orders**
 

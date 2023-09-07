@@ -6,7 +6,7 @@ Cancel a specific order by give order id.
 After cancelling an order, you can utilize the WebSocket streams for order history to continuously receive updated information about your orders in real-time.
 
 # Api Request
-**Rate Limit: `Allow `1200` requests per minute per IP & UID.`**
+**Rate Limit: `Allow `900` requests per minute per IP & UID.`**
 
 **`DELETE` /orders/{pair}/{orderId}**
 

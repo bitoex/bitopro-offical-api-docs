@@ -1,7 +1,7 @@
 # Get OrderBook Data
 Get the full order book of the specific pair
 
-> If you require real-time updates or a high-frequency trading environment, we recommend using the websocket orderbook api. For more details, please refer to this [link](web-socket-api_V3.md/#orderbook-stream).
+> If you require real-time updates or a high-frequency trading environment, we recommend using the websocket orderbook api. For more details, please refer to this [link](../../../ws/public/order_book_stream.md).
 
 # Api Request
 

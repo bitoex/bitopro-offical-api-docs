@@ -2,7 +2,7 @@
 
 Fetches all orders of specific pair within 90 days, and ordered by create time desc.
 
-If you need real-time updates to obtain unfilled orders, we recommend using the websocket open orders api. For more details, please refer to this [link](web-socket-api_V3.md/#open-orders-stream).
+If you need real-time updates to obtain unfilled orders, we recommend using the websocket open orders api. For more details, please refer to this [link](../../../ws/private/open_orders_stream.md).
 
 
 # Api Request

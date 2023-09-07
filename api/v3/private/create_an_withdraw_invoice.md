@@ -1,5 +1,7 @@
 # Create Withdraw Invoice
 
+Submit withdraw request. Before using this api, you have to setup your withdraw address from this [webpage](https://www.bitopro.com/address).
+
 # Api Request
 **Rate limit:**
 

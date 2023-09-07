@@ -2,10 +2,10 @@
 # Change Log
 | Date       | Version | Description                                                                                                                                                                                       |
 | :--------- | :------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 2023/09/08 | v3.5.10 | Add ignoreTimeLimitEnable for [List Orders Data](restful-api_V3.md/#list-orders-data) and API documentation structure adjustment.|
+| 2023/09/08 | v3.5.10 | Add ignoreTimeLimitEnable for [List Orders Data](./api/v3/private/get_orders_data.md) and API documentation structure adjustment.|
 | 2023/09/08 | v3.5.10 | Update [Get Currency Info](./api/v3/public/get_currency_info.md) api response with currency protocol and depositConfirmation  |
 | 2023/09/08 | v3.5.10 | Increase CreateOrder & BatchCreateOrders & CancelOrder & CancelAllOrders API rate limit                                                                                                           |
-| 2023/09/08 | v3.5.10 | Add History Order Ws Stream                                                                                                                                                                       |
+| 2023/09/08 | v3.5.10 | Add [History Order Ws Stream](./ws/private/history_orders_stream.md)  |
 | 2023/03/28 | v3.5.9  | Add 50 limit for [OrderBook API](restful-api_V3.md/#get-orderbook-data) and [OrderBook WS](web-socket-api_V3.md/#orderbook-stream)                                                                |
 | 2022/05/23 | v3.5.8  | Add BSC Protocol for [Withdrawal API](restful-api_V3.md/#create-withdraw-invoice)                                                                                                                 |
 | 2022/04/28 | v3.5.7  | Add Percent for [CreateOrder API](restful-api_V3.md/#create-an-order)                                                                                                                             |
@@ -35,7 +35,7 @@
         *   [Golang](#golang)
         *   [Python](#python)
         *   [Trade Tools SDK (免責)](./LICENSE)
-*   [General Info](#general-info)
+*   [API General Info](#api-general-info)
     *   [General API Information](#general-info)
         *   [API Endpoint & Versioning](#api-endpoint)
         *   [API Version List](#api-version-list)
@@ -81,12 +81,12 @@ An API key and secret are employed to authenticate your account's identity and g
 > Note : Please make sure you comprehend the following details thoroughly before utilizing programming scripts for api operations.
 #### API Security Protocol Procedure
 1. Generate API key and secret by following [Web Create Api Key SOP](#web-create-api-key-sop).
-2. Check [Authentication Header Parameters](#request-authentication-header-parameters) to understand combination of request header.
+2. Check [Authentication Header Parameters](#authentication-header-parameters) to understand combination of request header.
 3. Generate payload by following [Payload Generation SOP](#payload-generation-sop)
 4. Generate signature by following [Signature Generation SOP](#signature-generation-sop)
 5. Combine API Key, Payload and Signature into a HTTP request header.
 
-#### Request Authentication Header Parameters
+#### Authentication Header Parameters
 
 | Security scheme | Header parameter    |
 | :-------------- | :------------------ |
@@ -126,7 +126,7 @@ You can obtain the golang sample from the following [link](https://github.com/bi
 ### Python
 You can obtain the python sample from the following [link](https://github.com/bitoex/bitopro-api-python.git).
 
-# General Info
+# API General Info
 ## API Endpoint
 The RESTful API service is hosted at `https://api.bitopro.com/v3`.
 For the WebSocket API, the base endpoint is `wss://stream.bitopro.com:443/ws`.
@@ -147,7 +147,7 @@ For the WebSocket API, the base endpoint is `wss://stream.bitopro.com:443/ws`.
 | 4xx                                |                      |                       |                             |                           |
 |                                    | `400`                | Bad Request           | Request parameters mismatch |                           |
 |                                    | `401`                | Unauthorized api key  | API key has been deleted.   | Use an available API key. |
-|                                    | `403`                | Forbidden             | No permission               | Ask your manager          |
+|                                    | `403`                | Forbidden             | No permission               | Ask your manager or check your apiKey permission setting         |
 |                                    | `404`                | Resource Not Found    | Wrong path                  |                           |
 |                                    | `408`                | Request Timeout       | Send Request Takes Too Long |                           |
 |                                    | `409`                | Conflict              | Local Machine Time Mismatch |                           |
@@ -227,3 +227,6 @@ For the WebSocket API, the base endpoint is `wss://stream.bitopro.com:443/ws`.
 
   * Q7: How can I set up the Bitopro API trading environment using other programming languages?
     - A7: Currently, examples and environments for applications in other languages can be referred to at this link.
+  
+  * Q8: Where can I report issues or make feature requests related to the API?
+    - A8: You can join [API TG group](https://t.me/bitopro_api) for reporting or discussion.

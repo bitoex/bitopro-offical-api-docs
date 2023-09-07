@@ -2,7 +2,7 @@
 
 Fetch your spot wallet balances.
 
-> If you require real-time updates or a high-frequency trading environment, we recommend using the websocket account balance api. For more details, please refer to this [link](web-socket-api_V3.md/#account-balance-stream).
+> If you require real-time updates or a high-frequency trading environment, we recommend using the websocket account balance api. For more details, please refer to this [link](../../../ws/private/user_balance_stream.md).
 
 
 # Api Request
