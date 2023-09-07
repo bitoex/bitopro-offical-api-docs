@@ -30,6 +30,7 @@ def send_request(method, url, headers=None, data=None, timeout=None):
     except Exception as ex:
         print(ex)
 
+# execute pip install requests first
 def main():
     # generate payload
     params = {"identity": email, "nonce": int(time.time() * 1000)}
@@ -52,15 +53,15 @@ def main():
     }
 
     # combine endpoint with baseUrl
-    pair = "BTC_USDT"
-    order_id = ""
+    pair = "BTC_TWD"
+    order_id = "7924993709"
     endpoint = f"/orders/{pair}/{order_id}"
     complete_url = baseUrl + endpoint
 
     # send http request to server
     response = send_request(method="DELETE", url=complete_url, headers=headers)
     if response is not None:
-        print("Account balance:", json.dumps(response, indent=2))
+        print("Cancel Order:", json.dumps(response, indent=2))
     else:
         print("Request failed.")
 

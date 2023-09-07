@@ -30,13 +30,14 @@ def send_request(method, url, headers=None, data=None, timeout=None):
     except Exception as ex:
         print(ex)
 
+# execute pip install requests first
 def main():
     # generate payload
     # create order request body
     params = {
         "action": "BUY",
         "amount": str(0.0001),
-        "price": str(10000),
+        "price": str(750000),
         "timestamp": int(time.time() * 1000),
         "type": "LIMIT",
         "timeInForce": "POST_ONLY"
@@ -58,13 +59,13 @@ def main():
         "X-BITOPRO-SIGNATURE": signature,
     }
 
-    pair = "BTC_USDT"
+    pair = "btc_twd"
     # combine endpoint with baseUrl
     endpoint = f"/orders/{pair}"
     complete_url = baseUrl + endpoint
 
     # send http request to server
-    response = send_request(method="POST", url=complete_url, headers=headers)
+    response = send_request(method="POST", url=complete_url, headers=headers, data=params)
     if response is not None:
         print("Order created:", json.dumps(response, indent=2))
     else:

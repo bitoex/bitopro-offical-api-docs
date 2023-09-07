@@ -30,6 +30,7 @@ def send_request(method, url, headers=None, data=None, timeout=None):
     except Exception as ex:
         print(ex)
 
+# execute pip install requests first
 def main():
     # generate payload
     params = {"identity": email, "nonce": int(time.time() * 1000)}
