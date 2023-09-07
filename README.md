@@ -2,8 +2,10 @@
 # Change Log
 | Date       | Version | Description                                                                                                                                                                                       |
 | :--------- | :------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 2023/09/07 | v3.5.10 | Increase CreateOrder & BatchCreateOrders & CancelOrder & CancelAllOrders API rate limit                                                                                                           |
-| 2023/09/07 | v3.5.10 | Add History Order Ws Stream                                                                                                                                                                       |
+| 2023/09/08 | v3.5.10 | Add ignoreTimeLimitEnable for [List Orders Data](restful-api_V3.md/#list-orders-data) and API documentation structure adjustment.|
+| 2023/09/08 | v3.5.10 | Update [Get Currency Info](./api/v3/public/get_currency_info.md) api response with currency protocol and depositConfirmation  |
+| 2023/09/08 | v3.5.10 | Increase CreateOrder & BatchCreateOrders & CancelOrder & CancelAllOrders API rate limit                                                                                                           |
+| 2023/09/08 | v3.5.10 | Add History Order Ws Stream                                                                                                                                                                       |
 | 2023/03/28 | v3.5.9  | Add 50 limit for [OrderBook API](restful-api_V3.md/#get-orderbook-data) and [OrderBook WS](web-socket-api_V3.md/#orderbook-stream)                                                                |
 | 2022/05/23 | v3.5.8  | Add BSC Protocol for [Withdrawal API](restful-api_V3.md/#create-withdraw-invoice)                                                                                                                 |
 | 2022/04/28 | v3.5.7  | Add Percent for [CreateOrder API](restful-api_V3.md/#create-an-order)                                                                                                                             |
