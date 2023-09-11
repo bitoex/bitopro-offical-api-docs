@@ -4,7 +4,7 @@
 | :--------- | :------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | 2023/09/08 | v3.5.10 | Add ignoreTimeLimitEnable for [List Orders Data](./api/v3/private/get_orders_data.md) and API documentation structure adjustment.|
 | 2023/09/08 | v3.5.10 | Update [Get Currency Info](./api/v3/public/get_currency_info.md) api response with currency protocol and depositConfirmation  |
-| 2023/09/08 | v3.5.10 | Increase CreateOrder & BatchCreateOrders & CancelOrder & CancelAllOrders API rate limit                                                                                                           |
+| 2023/09/08 | v3.5.10 | Increase [CreateOrder](./api/v3/private/create_an_order.md) & [BatchCreateOrders](./api/v3/private/create_batch_orders.md) & [CancelOrder](./api/v3/private/cancel_an_order.md) & [CancelAllOrders](./api/v3/private/cancel_all_orders.md) API rate limit                                                                                                           |
 | 2023/09/08 | v3.5.10 | Add [History Order Ws Stream](./ws/private/history_orders_stream.md)  |
 | 2023/03/28 | v3.5.9  | Add 50 limit for [OrderBook API](restful-api_V3.md/#get-orderbook-data) and [OrderBook WS](web-socket-api_V3.md/#orderbook-stream)                                                                |
 | 2022/05/23 | v3.5.8  | Add BSC Protocol for [Withdrawal API](restful-api_V3.md/#create-withdraw-invoice)                                                                                                                 |
