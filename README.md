@@ -141,6 +141,8 @@ For the WebSocket API, the base endpoint is `wss://stream.bitopro.com:443/ws`.
   - 600 requests per minute per IP
   - 600 requests per minute per user account
 
+note : Some of API has its own rate limit, please check api document. (e.g [Create-An-Order](./api/v3/private/create_an_order.md))
+
 ## HTTP Status Code & Error Response
 | **HTTP Status Code Prefix Number** | **HTTP Status Code** | **Error Code**        | **Reason**                  | **Solution**              |
 | ---------------------------------- | -------------------- | --------------------- | --------------------------- | ------------------------- |
