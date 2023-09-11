@@ -9,7 +9,7 @@ After initiating an order, you can utilize the WebSocket streams for both [open 
 
 # Api Request
 
-**Rate Limit: `Allow `900` requests per minute per IP & UID.`**
+**Rate Limit: `Allow `1200` requests per minute per IP & UID.`**
 
 **`POST` /orders/{pair}**
 
