@@ -1,4 +1,4 @@
-## Get A Withdraw Invoice
+# Get A Withdraw Invoice
 **`GET` /wallet/withdraw/{currency}/{serial}**
 
 # Api Request
