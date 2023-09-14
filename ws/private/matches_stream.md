@@ -25,15 +25,17 @@ You can find how to create payload and signature from [authentication document](
 | 0    | event             | string  | String literal for event name                                                       |
 | 0    | timestamp         | integer | Unix Timestamp in milliseconds (seconds * 1000)                                     |
 | 0    | datetime          | string  | ISO8601 datetime string with milliseconds                                           |
-| 1    | side              | string  | BUY or SELL                                                                         |
+| 1    | side              | string  | ask (i.e sell) or bid (ie buy)                                                                         |
 | 1    | price             | string  | match price                                                                                  |
 | 1    | volume            | string  |   match base amount                                                                              |
 | 1    | fee              | string  | match fee amount                                                         |
 | 1    | feeCurrency  | string | match fee currency                                     |
 | 1    | transactionTimestamp  | integer | Unix Timestamp of match time                                      |
+| 1    | eventTimestamp  | integer | trade process time in server, unix timestamp in second |
 | 1    | orderID    | string  |      match order ID                                                                               |
 | 1    | orderType   | string  |      match order type, refer to [order type enum](../../model.md#order-type-enum) |
 | 1    | matchID    | string  |       match id                                                                              |
+| 1    | isMarket         | string  | if it true mean that the matched order is market type order                                                         |
 | 1    | isMaker         | string  | if it true mean that the match is matched as maker side                                                         |
  
 
@@ -41,23 +43,25 @@ You can find how to create payload and signature from [authentication document](
 
 ```javascript
 {
-  "event": "USER_TRADE",
-  "timestamp": 1639552073346,
-  "datetime": "2021-12-15T07:07:53.346Z",
-  "data": {
-    "base": "yfi",
-    "quote": "twd",
-    "side": "ask",
-    "price": "50",
-    "volume": "0.0001",
-    "fee": "0",
-    "feeCurrency": "twd",
-    "transactionTimestamp": 1690950154,
-    "orderID": 306553356,
-    "orderType": "LIMIT",
-    "matchID": "00bac524-223c-44af-8390-73ac43178840",
-    "isMaker": false
-  }
+    "event": "USER_TRADE",
+    "timestamp": 1694667358782,
+    "datetime": "2023-09-14T12:55:58.782Z",
+    "data": {
+        "base": "usdt",
+        "quote": "twd",
+        "side": "ask",
+        "price": "32.039",
+        "volume": "1",
+        "fee": "6407800",
+        "feeCurrency": "twd",
+        "transactionTimestamp": 1694667358,
+        "eventTimestamp": 1694667358,
+        "orderID": 390733918,
+        "orderType": "LIMIT",
+        "matchID": "bd07673a-94b1-419e-b5ee-d7b723261a5d",
+        "isMarket": false,
+        "isMaker": false
+    }
 }
 ```
 [Back](README.md)
