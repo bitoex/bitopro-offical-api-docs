@@ -32,7 +32,7 @@ You can find how to create payload and signature from [authentication document](
 | 1    | feeCurrency  | string | match fee currency                                     |
 | 1    | transactionTimestamp  | integer | Unix Timestamp of match time                                      |
 | 1    | orderID    | string  |      match order ID                                                                               |
-| 1    | orderType   | string  |      match order type                                                                               |
+| 1    | orderType   | string  |      match order type, refer to [order type enum](../../model.md#order-type-enum) |
 | 1    | matchID    | string  |       match id                                                                              |
 | 1    | isMaker         | string  | if it true mean that the match is matched as maker side                                                         |
  

@@ -16,8 +16,8 @@
 | pair | string | order's trading pair which is format by `{BASE}_{QUOTE}` |
 | avgExecutionPrice | string | the average execution price of the order. The order remains untraded, signified by a zero-average execution price. | 
 | action | string | `BUY` or `SELL` |
-| type | string | order type `LIMIT` or `MARKET` or `STOP_LIMIT`|
-| status | int | order status, refer to [order status](#order-status-explanation) |
+| type | string | order type `LIMIT` or `MARKET` or `STOP_LIMIT`, refer to [order type](#order-type-enum) |
+| status | int | order status, refer to [order status](#order-status-enum) |
 | originalAmount | string | original order amount at the time of placement. |
 | remainingAmount | string | remaining order amount. | 
 | executedAmount | string | executed order amount. | 
@@ -32,7 +32,7 @@
 | createdTimestamp | string | order creation time in msec unit. | 
 | updatedTimestamp | string | order updated time in msec unit. | 
 
-## Order Status Explanation
+## Order Status Enum
 * `-1`: Not Triggered
 * `0`:  In progress
 * `1`:  In progress \(Partial deal\)
@@ -40,3 +40,8 @@
 * `3`:  Completed \(Partial deal\)
 * `4`:  Cancelled
 * `6`:  Post-only Cancelled
+
+## Order Type Enum
+* `LIMIT`: limit price order
+* `STOP_LIMIT`:  limit price order with trigger price and trigger condition
+* `MARKET`:  market order
