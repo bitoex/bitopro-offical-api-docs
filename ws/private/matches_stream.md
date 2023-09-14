@@ -25,19 +25,16 @@ You can find how to create payload and signature from [authentication document](
 | 0    | event             | string  | String literal for event name                                                       |
 | 0    | timestamp         | integer | Unix Timestamp in milliseconds (seconds * 1000)                                     |
 | 0    | datetime          | string  | ISO8601 datetime string with milliseconds                                           |
-| 1    | id                | string  |                                                                                     |
 | 1    | side              | string  | BUY or SELL                                                                         |
-| 1    | price             | string  |                                                                                     |
-| 1    | volume            | string  |                                                                                     |
-| 1    | fee              | string  | LIMIT, Market or STOP_LIMIT                                                         |
-| 1    | feeCurrency  | integer | Unix Timestamp in milliseconds (seconds * 1000)                                     |
-| 1    | transactionTimestamp  | integer | Unix Timestamp in milliseconds (seconds * 1000)                                     |
-| 1    | eventTimestamp            | integer | [see order status](../../model.md#order-status-explanation)                                      |
-| 1    | orderID    | string  |                                                                                     |
-| 1    | orderType   | string  |                                                                                     |
-| 1    | matchID    | string  |                                                                                     |
-| 1    | isMarket         | string  |                                                                                     |
-| 1    | isMaker         | string  | stop limit trigger condition                                                        |
+| 1    | price             | string  | match price                                                                                  |
+| 1    | volume            | string  |   match base amount                                                                              |
+| 1    | fee              | string  | match fee amount                                                         |
+| 1    | feeCurrency  | string | match fee currency                                     |
+| 1    | transactionTimestamp  | integer | Unix Timestamp of match time                                      |
+| 1    | orderID    | string  |      match order ID                                                                               |
+| 1    | orderType   | string  |      match order type                                                                               |
+| 1    | matchID    | string  |       match id                                                                              |
+| 1    | isMaker         | string  | if it true mean that the match is matched as maker side                                                         |
  
 
 **Response Example:**
@@ -56,11 +53,9 @@ You can find how to create payload and signature from [authentication document](
     "fee": "0",
     "feeCurrency": "twd",
     "transactionTimestamp": 1690950154,
-    "eventTimestamp": 1690950154,
     "orderID": 306553356,
     "orderType": "LIMIT",
     "matchID": "00bac524-223c-44af-8390-73ac43178840",
-    "isMarket": false,
     "isMaker": false
   }
 }
