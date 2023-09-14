@@ -1,3 +1,4 @@
+# BitoPro Official Open API Document
 # Table of Content
 *   [Getting Started](#getting-started)
     *   [API Key Setup](#api-key-setup)
