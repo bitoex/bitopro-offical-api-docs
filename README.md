@@ -94,6 +94,8 @@ The hex digest of an HMAC-SHA384 hash where the message is your **payload**, and
 - [Get Account Balance Script](./example/get_account_balance.py)
 - [Create Order Script](./example/create_order.py)
 - [Cancel Order Script](./example/cancel_order.py)
+- [Account Balance WS Stream Script](./example/account_balance_ws.py)
+- [OrderBook Ws Stream Script](./example/orderbook_ws.py)
 
 ## API Library
 
