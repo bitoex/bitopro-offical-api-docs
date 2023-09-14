@@ -1,30 +1,4 @@
-
-# Change Log
-| Date       | Version | Description                                                                                                                                                                                       |
-| :--------- | :------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 2023/09/08 | v3.5.10 | Add ignoreTimeLimitEnable for [List Orders Data](./api/v3/private/get_orders_data.md) and API documentation structure adjustment.|
-| 2023/09/08 | v3.5.10 | Update [Get Currency Info](./api/v3/public/get_currency_info.md) api response with currency protocol and depositConfirmation  |
-| 2023/09/08 | v3.5.10 | Increase [CreateOrder](./api/v3/private/create_an_order.md) & [BatchCreateOrders](./api/v3/private/create_batch_orders.md) & [CancelOrder](./api/v3/private/cancel_an_order.md) & [CancelAllOrders](./api/v3/private/cancel_all_orders.md) API rate limit                                                                                                           |
-| 2023/09/08 | v3.5.10 | Add [History Order Ws Stream](./ws/private/history_orders_stream.md)  |
-| 2023/03/28 | v3.5.9  | Add 50 limit for [OrderBook API](./api/v3/public/get_orderbook_data.md) and [OrderBook WS](./ws/public/order_book_stream.md)                                                                |
-| 2022/05/23 | v3.5.8  | Add BSC Protocol for [Withdrawal API](./api/v3/private/create_an_withdraw_invoice.md)                                                                                                                 |
-| 2022/04/28 | v3.5.7  | Add Percent for [CreateOrder API](./api/v3/private/create_an_order.md)                                                                                                                             |
-| 2022/03/15 | v3.5.6  | Add ClientID for [CreateOrder API](./api/v3/private/create_an_order.md)                                                                                                                            |
-| 2022/02/16 | v3.5.5  | Add [Private Websocket Stream](./ws/private/history_orders_stream.md).                                                                                                                   |
-| 2021/12/23 | v3.5.4  | Add [All Trades](./api/v3/private/get_trades_data.md) auth api.                                                                                                                                                   |
-| 2021/12/23 | v3.5.4  | [Cancel multiple orders](./api/v3/private/cancel_batch_orders.md) and [Cancel all orders](./api/v3/private/cancel_all_orders.md) to allow `1` requests per second per IP.                           |
-| 2021/04/13 | v3.5.3  | Post-only added to [Create Order](./api/v3/private/create_an_order.md) and [Create batch limit/market orders](./api/v3/private/create_batch_orders.md) . New order `status` 6 for post-only cancel. |
-| 2021/01/21 | v3.5.2  | [All Orders](./api/v3/private/get_orders_data.md), parameter change. `statusKind` `Done` only include status 2 and 3. New parameter `status` added to retrieve single specified `status`.         |
-| 2021/01/05 | v3.5.1  | Support [All Orders](./api/v3/private/get_orders_data.md), deprecated Order List                                                                                                                  |
-| 2020/05/19 | v3.5.0  | Support [Withdraw](./api/v3/private/create_an_withdraw_invoice.md) and [Withdraw status](// todo put link) API                                                                                        |
-|            |         | Support [Create batch limit/market orders](./api/v3/private/create_batch_orders.md)                                                                                                                |
-| 2020/03/31 | v3.3.0  | Support [Cancel all](./api/v3/private/cancel_all_orders.md) and [Cancel batch](./api/v3/private/cancel_batch_orders.md) APIs                                                                        |
-| 2019/11/19 | v3.0.0  | Add support for Stop Limit orders. Stop Limit order fields added to all related API response.                                                                                                     |
-|            |         | Add `feeSymbol` in [Get order list](./api/v3/private/get_orders_data.md) is now in lowercase                                                                                                      |
-|            |         | Removed Get order history API                                                                                                                                                                     |
-|            |         | Removed Get ticker API                                                                                                                                                                            |
-|            |         | Add `tradable` to [Get the account balance](./api/v3/private/get_account_balance.md) API                                                                                                              |
-
+# BitoPro Official Open API Document
 # Table of Content
 *   [Getting Started](#getting-started)
     *   [API Key Setup](#api-key-setup)
@@ -43,6 +17,7 @@
         *   [HTTP Status Code & Error Response](#http-status-code--error-response)
     *   [Order Operation Introduction](./order.md)
     *   [Data Model Information](./model.md)
+    *   [Change Log](./changelog.md)
 *   [Restful API List](#restful-api-list)
     *   [Public API List](#public-restful-api)
         *   [Market Data Endpoints](#market-data-endpoints)
@@ -56,6 +31,7 @@
 *   [Contact Us](#contact-us)
     *   [Support](#support)
     *   [FAQ](#faq)
+
 
 # Getting Started
 
@@ -118,6 +94,8 @@ The hex digest of an HMAC-SHA384 hash where the message is your **payload**, and
 - [Get Account Balance Script](./example/get_account_balance.py)
 - [Create Order Script](./example/create_order.py)
 - [Cancel Order Script](./example/cancel_order.py)
+- [Account Balance WS Stream Script](./example/account_balance_ws.py)
+- [OrderBook Ws Stream Script](./example/orderbook_ws.py)
 
 ## API Library
 
