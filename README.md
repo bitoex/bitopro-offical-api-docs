@@ -149,6 +149,7 @@ note : Some of API has its own rate limit, please check api document. (e.g [Crea
 *   [List Trades Data](./api/v3/public/get_trades_data.md)
 *   [List OHLC Data](./api/v3/public/get_ohlc_data.md)
 *   [List Currencies](./api/v3/public/get_currency_info.md)
+*   [Get OTC Price](./api/v3/public/get_otc_price.md)
 ## Private Restful API
 ### Order Endpoints
 *   [Create An Order](./api/v3/private/create_an_order.md)
