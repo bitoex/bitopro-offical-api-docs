@@ -31,6 +31,7 @@
 *   [Contact Us](#contact-us)
     *   [Support](#support)
     *   [FAQ](#faq)
+*   [Change Log](./changelog.md)
 
 
 # Getting Started
@@ -39,7 +40,7 @@
 ### Web Create Api Key SOP
 1. [Log in](https://www.bitopro.com/users/sign_in) to your BitoPro account. If you don't have an account, you will need to register and complete identity verification first.
 
-2. In the upper right corner of the [webpage](https://www.bitopro.com/api), click on your username or avatar, and select 'API' from the dropdown menu.
+2. In the upper right corner of the [webpage](https://www.bitopro.com/api_list), click on your username or avatar, and select 'API' from the dropdown menu.
 
 3. You should then see a page titled 'API Management'. On this page, click on 'Create new API key' or a similar button.
 ![Alt text](image.png)
