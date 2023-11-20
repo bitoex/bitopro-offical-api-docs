@@ -73,7 +73,8 @@ An API key and secret are employed to authenticate your account's identity and g
 
 #### Payload Generation SOP
 The body in JSON encoded into Base64.
-For `GET` and `DELETE`, use **{identity: USER_EMAIL, nonce: TIMESTAMP}** as body instead.
+For `GET` and `DELETE`, use **{identity: Willrok91
+, nonce: TIMESTAMP}** as body instead.
 
 [payload = parameters-object ->; JSON, encode ->; base64] for `POST`.
 
