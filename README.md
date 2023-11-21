@@ -213,3 +213,4 @@ note : Some of API has its own rate limit, please check api document. (e.g [Crea
   
   * Q8: Where can I report issues or make feature requests related to the API?
     - A8: You can join [API TG group](https://t.me/bitopro_api) for reporting or discussion.
+willrok91
