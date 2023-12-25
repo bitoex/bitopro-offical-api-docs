@@ -1,6 +1,8 @@
 # Account Balance Stream
 This channel pushes account balance message.
 
+Note: When you initially establish a websocket connection, you will receive balance from all currencies. After that, the websocket server will only push the updated balance.
+
 # Ws Request
 
 **`GET` wss://stream.bitopro.com:443/ws/v1/pub/auth/account-balance**
@@ -33,6 +35,7 @@ You can find how to create payload and signature from [authentication document](
 
 
 ```javascript
+// first message for all currencies
 {
     "event": "ACCOUNT_BALANCE",
     "timestamp": 1639553303365,
@@ -116,6 +119,21 @@ You can find how to create payload and signature from [authentication document](
             "tradable": false
         },
         ...
+    }
+}
+// second message for updated balance
+{
+    "event": "ACCOUNT_BALANCE",
+    "timestamp": 1639553303365,
+    "datetime": "2021-12-15T07:28:23.365Z",
+    "data": {
+        "ADA": {
+            "currency": "ADA",
+            "amount": "999999999999.99999999",
+            "available": "0",
+            "stake": "0",
+            "tradable": true
+        }
     }
 }
 ```
