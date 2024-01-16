@@ -2,6 +2,7 @@
 # Change Log
 | Date       | Version | Description                                                                                                                                                                                       |
 | :--------- | :------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 2024/01/16 | v3.5.13 | Update [History Orders Ws Stream](./ws/private/history_orders_stream.md) and [Open Orders Ws Stream](./ws/private/open_orders_stream.md), it will only publish updated orders.|
 | 2023/10/31 | v3.5.12 | Add [Get OTC Price](./api/v3/public/get_otc_price.md) API.|
 | 2023/09/14 | v3.5.11 | Add [User Trade Ws Stream](./ws/private/matches_stream.md)|
 | 2023/09/08 | v3.5.10 | Add ignoreTimeLimitEnable for [List Orders Data](./api/v3/private/get_orders_data.md) and API documentation structure adjustment.|
