@@ -1,4 +1,4 @@
-# BitoPro Official Open API Document
+.github/workflows/generator-generic-ossf-slsa3-publish.yml# BitoPro Official Open API Document
 # Table of Content
 *   [Getting Started](#getting-started)
     *   [API Key Setup](#api-key-setup)
