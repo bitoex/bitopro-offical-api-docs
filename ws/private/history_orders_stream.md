@@ -29,7 +29,7 @@ You can find how to create payload and signature from [authentication document](
 | 1    | action            | string  | BUY or SELL                                                                         |
 | 1    | price             | string  |                                                                                     |
 | 1    | avgExecutionPrice | string  |                                                                                     |
-| 1    | type              | string  | LIMIT, Market or STOP_LIMIT                                                         |
+| 1    | type              | string  | LIMIT, Market, STOP_LIMIT, SP_OCO_STOPLIMIT, SL_OCO_STOPLIMIT                                                        |
 | 1    | createdTimestamp  | integer | Unix Timestamp in milliseconds (seconds * 1000)                                     |
 | 1    | updatedTimestamp  | integer | Unix Timestamp in milliseconds (seconds * 1000)                                     |
 | 1    | status            | integer | [see order status](../../model.md#order-status-explanation)                                      |
@@ -100,6 +100,34 @@ To get detailed order model explanation, refer to [order model explanation.](../
                 "total": "0",
                 "seq": "USDCTWD2310459465"
                 "timeInForce": "GTC"
+            }
+        ],
+        "eth_twd": [
+            { // SL_OCO_STOPLIMIT
+              "id":"SL-397992807",
+              "pair":"eth_twd",
+              "price":"980",
+              "avgExecutionPrice":"980",
+              "action":"SELL",
+              "type":"SL_OCO_STOPLIMIT",
+              "timestamp":1701703883000,
+              "status":2,
+              "originalAmount":"1",
+              "remainingAmount":"0",
+              "executedAmount":"1",
+              "fee":"0.588",
+              "feeSymbol":"twd",
+              "bitoFee":"0",
+              "total":"980",
+              "seq":"ETHTWD1508692221",
+              "stopPrice":"980",
+              "condition":"<=",
+              "timeInForce":"GTC",
+              "createdTimestamp":1701703831000,
+              "updatedTimestamp":1701703883000,
+              "stopLossesPricePercentage":"2",
+              "stopProfitPricePercentage":"0",
+              "parentID":"3829575872"
             }
         ]
     }

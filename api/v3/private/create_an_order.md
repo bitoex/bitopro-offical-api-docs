@@ -35,7 +35,7 @@ You can find how to create payload and signature from [authentication document](
 | type        | string  | Yes      | The order type.                                                                                                              |         | `LIMIT`, `MARKET`, `STOP_LIMIT` | MARKET        |
 | stopPrice   | string  | No       | The price to trigger stop limit order, **only required** when `type` is `STOP_LIMIT`.                                        |         |                                 | 3564.2563     |
 | condition   | string  | No       | The condition to match stop price, **only required** when `type` is `STOP_LIMIT`.                                            |         | `>=`, `<=`                      | <=            |
-| timeInForce | string  | No       | Time in force condition for orders. If type is `MARKET`, this will always be `GTC`.                                          | `GTC`   | `GTC`, `POST_ONLY`              | POST_ONLY     |
+| timeInForce | string  | No       | Time in force condition for orders. If type are `MARKET`, `STOP_LIMIT`, this will always be `GTC`.                                          | `GTC`   | `GTC`, `POST_ONLY`              | POST_ONLY     |
 | clientId    | uint64  | No       | This information help users distinguish their orders.                                                                        |         | 1 ~ 2147483647                  | 12345         |
 | percentage  | uint64  | No       | The amount of the sell order which can be percentage of your balance. (e.g 1 mean 1%)                                        | 1~100   | 100                             |
 
