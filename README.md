@@ -3,7 +3,7 @@
 *   [Getting Started](#getting-started)
     *   [API Key Setup](#api-key-setup)
         *   [Web Create Api Key SOP](#web-create-api-key-sop)
-        *   [API Security](#authentication)
+        *   [API Security](#api-security-protocol)
         *   [API Example Scripts](#api-example-scripts)
     *   [API Library](#api-library)
         *   [Golang](#golang)

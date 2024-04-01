@@ -14,7 +14,7 @@ Note: When you initially establish a websocket connection, you will receive acti
     | API Key         | X-BITOPRO-APIKEY    |
     | Payload         | X-BITOPRO-PAYLOAD   |
     | Signature       | X-BITOPRO-SIGNATURE |
-You can find how to create payload and signature from [authentication document](../../README.md#authentication-header-parameters).
+You can find how to create payload and signature from [authentication document](../../README.md#api-security-protocol).
 
 # Ws Response
 
