@@ -161,6 +161,7 @@ note : Some of API has its own rate limit, please check api document. (e.g [Crea
 *   [Get An Order Data](./api/v3/private/get_an_order_data.md)
 *   [List Orders Data](./api/v3/private/get_orders_data.md)
 *   [List Trades](./api/v3/private/get_trades_data.md)
+*   [List Open Orders Data](./api/v3/private/get_open_orders_data.md)
 ### Account Endpoints
 *   [Get User Balance](./api/v3/private/get_account_balance.md)
 ### Wallet Endpoints
