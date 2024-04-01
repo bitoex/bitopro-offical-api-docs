@@ -15,7 +15,7 @@ After initiating an order, you can utilize the WebSocket streams for both [open 
 
 **Parameters:**
 
-You can find how to create payload and signature from [authentication document](../../README.md#api-security-protocol).
+You can find how to create payload and signature from [authentication document](../../../README.md#authentication-header-parameters).
 
 | Header              | Path | Query | Type   | Required | Description                                                                                                               | Default | Range | Example   |
 | :------------------ | :--- | :---- | :----- | :------- | :------------------------------------------------------------------------------------------------------------------------ | :------ | :---- | :-------- |
