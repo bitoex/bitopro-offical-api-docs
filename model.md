@@ -42,6 +42,8 @@
 * `6`:  Post-only Cancelled
 
 ## Order Type Enum
-* `LIMIT`: limit price order
-* `STOP_LIMIT`:  limit price order with trigger price and trigger condition
-* `MARKET`:  market order
+* `LIMIT`: limit price order.
+* `STOP_LIMIT`:  limit price order with trigger price and trigger condition.
+* `MARKET`:  market order.
+* `SP_OCO_STOPLIMIT`:   take-profit order is a combination of a stop-loss order with OCO (One Cancels the Other) properties, which only allows placing orders from the web interface.
+* `SL_OCO_STOPLIMIT`:  stop-loss order is a combination of a stop-loss order with OCO (One Cancels the Other) properties, which only allows placing orders from the web interface.
