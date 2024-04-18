@@ -2,6 +2,7 @@
 # Change Log
 | Date       | Version | Description                                                                                                                                                                                       |
 | :--------- | :------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 2024/04/18 | v3.5.15 | Fix [Get Orders Data API](./api/v3/private/get_orders_data.md) and [Get Trades Data API](./api/v3/private/get_trades_data.md) orderID shift and tradeID shift bug, change shift logic from `>=` to `<=`.|
 | 2024/03/28 | v3.5.14 | Add [Get Open Orders API](./api/v3/private/get_open_orders_data.md).|
 | 2024/01/16 | v3.5.13 | Update [History Orders Ws Stream](./ws/private/history_orders_stream.md) and [Open Orders Ws Stream](./ws/private/open_orders_stream.md), it will only publish updated orders.|
 | 2023/10/31 | v3.5.12 | Add [Get OTC Price](./api/v3/public/get_otc_price.md) API.|
