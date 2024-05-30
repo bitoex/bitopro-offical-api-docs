@@ -45,6 +45,7 @@ You can find how to create payload and signature from [authentication document](
 | 1    | total             | string  | total trading quote currency amount                                                 |
 | 1    | seq               | string  | order sequence number                                                               |
 | 1    | timeInForce       | string  | Time in force condition for orders. If type is `MARKET`, this will always be `GTC`. | `GTC` | `GTC`, `POST_ONLY` | POST_ONLY |
+| 1    | clientID          | integer | This information help users distinguish their orders.                               |
  
 To get detailed order model explanation, refer to [order model explanation.](../../../model.md#order-model-explanation)
 
