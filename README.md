@@ -179,6 +179,7 @@ note : Some of API has its own rate limit, please check api document. (e.g [Crea
 *   [Open Orders Stream](./ws/private/open_orders_stream.md)
 *   [History Orders Stream](./ws/private/history_orders_stream.md)
 *   [Account Balance Stream](./ws/private/user_balance_stream.md)
+*   [User Trade Stream](./ws/private/user_trade_stream.md)
 
 
 # Contact us

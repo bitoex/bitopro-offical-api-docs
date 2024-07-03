@@ -1,7 +1,5 @@
-# Order Matches Stream
-This channel pushes messages with history orders.
-
-Note: When you initially establish a websocket connection, you will receive active orders from all trading pairs. After that, the websocket server will only push the updated history orders from the single trading pair.
+# User Trade Stream
+This channel pushes messages with your trade data.
 
 # Ws Request
 
