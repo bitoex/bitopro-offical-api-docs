@@ -35,7 +35,7 @@ To get detailed order model explanation, refer to [order model explanation.](../
       "avgExecutionPrice": "0",
       "bitoFee": "0",
       "condition": "", // if order type is not stop_limit, condition will be empty
-      "stopPrice": "", // if order type is not stop_limit, condition will be empty
+      "stopPrice": "", // if order type is not stop_limit, stopPrice will be empty
       "executedAmount": "0",
       "fee": "0",
       "feeSymbol": "bito",
