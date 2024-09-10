@@ -34,28 +34,8 @@ To get detailed order model explanation, refer to [order model explanation.](../
       "action": "BUY",
       "avgExecutionPrice": "0",
       "bitoFee": "0",
-      "executedAmount": "0",
-      "fee": "0",
-      "feeSymbol": "bito",
-      "id": "887521192",
-      "originalAmount": "1000",
-      "pair": "bito_eth",
-      "price": "0.005",
-      "remainingAmount": "1000",
-      "seq": "BITOETH8913789893",
-      "status": 0,
-      "createdTimestamp": 1570591525592,
-      "updatedTimestamp": 1570601523551,
-      "total": "0",
-      "type": "LIMIT",
-      "timeInForce": "GTC",
-      "clientId": 123
-    },
-    {
-      "action": "BUY",
-      "avgExecutionPrice": "0",
-      "bitoFee": "0",
-      "condition": ">=",
+      "condition": "", // if order type is not stop_limit, condition will be empty
+      "stopPrice": "", // if order type is not stop_limit, condition will be empty
       "executedAmount": "0",
       "fee": "0",
       "feeSymbol": "bito",
@@ -66,12 +46,11 @@ To get detailed order model explanation, refer to [order model explanation.](../
       "remainingAmount": "1000",
       "seq": "BITOETH4618822599",
       "status": -1,
-      "stopPrice": "10",
       "timestamp": 1570591225827,
       "total": "0",
-      "type": "STOP_LIMIT",
+      "type": "LIMIT",
       "timeInForce": "GTC",
-      "clientId": 123
+      "clientId": 0
     },
     {
       "action": "BUY",
