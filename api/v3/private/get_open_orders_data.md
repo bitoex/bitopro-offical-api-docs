@@ -50,7 +50,7 @@ To get detailed order model explanation, refer to [order model explanation.](../
       "total": "0",
       "type": "LIMIT",
       "timeInForce": "GTC",
-      "clientId": 0
+      "clientId": 0 // if clientId is not assigned value will be zero value
     },
     {
       "action": "BUY",
