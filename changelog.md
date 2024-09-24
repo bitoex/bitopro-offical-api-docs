@@ -2,6 +2,7 @@
 # Change Log
 | Date       | Version | Description                                                                                                                                                                                       |
 | :--------- | :------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 2024/09/24 | v3.5.17 | Add `orderIDs` query parameter for [List Orders Data](./api/v3/private/get_orders_data.md) api. |
 | 2024/05/30 | v3.5.16 | Add `clientID` field into [Open Orders WS stream](./ws/private/open_orders_stream.md) and [History Orders WS stream](./ws/private/history_orders_stream.md) |
 | 2024/04/18 | v3.5.15 | Fix [Get Orders Data API](./api/v3/private/get_orders_data.md) and [Get Trades Data API](./api/v3/private/get_trades_data.md) orderID shift and tradeID shift bug, change shift logic from `>=` to `<=`.|
 | 2024/03/28 | v3.5.14 | Add [Get Open Orders API](./api/v3/private/get_open_orders_data.md).|

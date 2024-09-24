@@ -26,6 +26,8 @@ You can find how to create payload and signature from [authentication document](
 |                     |      | limit          | int32  | No       | The number of records to retrieve.                                                                                                                                                                                                             | 100               | 1 ~ 1000                              | 100           |
 |                     |      | clientId       | int32  | No       | This information help users distinguish their orders.                                                                                                                                                                                          |                   | 1 ~ 2147483647                        | 12345         |
 | | | ignoreTimeLimitEnable | bool | No | This parameter can only be used with the `query orders with OPEN status`. If set to true, it will respond with all open orders without a time range limitation. | | | false |
+| | | orderIDs | string | No | This parameter is array of order ids which you want to get from, and it's form should be concat by comma (e.g 1,2,3). If you use order ids to query orders, timestamp range parameters (i.e startTimestamp and endTimestamp) will be ignored. Maximum length of array is 1000  | | | 1,2,3,4,5 |
+
 
 The `startTimestamp` and `endTimestamp` can only be 90 days apart. If the range is greater than 90 days, the parameter will be adjusted accordingly, and the behavior is undefined. If both `startTimestamp` and `endTimestamp` are not defined, `startTimestamp` will be set to 90 days before the current time, and `endTimestamp` will be set to the current time.
 
