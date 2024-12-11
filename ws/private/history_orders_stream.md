@@ -23,6 +23,7 @@ You can find how to create payload and signature from [authentication document](
 | 0    | Field             | Type    | Description                                                                         |
 | :--- | :---------------- | :------ | :---------------------------------------------------------------------------------- |
 | 0    | event             | string  | String literal for event name                                                       |
+| 0    | eventID           | string  | event id for debug usage |
 | 0    | timestamp         | integer | Unix Timestamp in milliseconds (seconds * 1000)                                     |
 | 0    | datetime          | string  | ISO8601 datetime string with milliseconds                                           |
 | 1    | id                | string  |                                                                                     |
@@ -54,6 +55,7 @@ To get detailed order model explanation, refer to [order model explanation.](../
 ```javascript
 {
     "event": "RECENT_HISTORY_ORDERS",
+    "eventID": "dadf4ac1-665a-4f39-a139-ab95da102374",
     "timestamp": 1639552073346,
     "datetime": "2021-12-15T07:07:53.346Z",
     "data": {

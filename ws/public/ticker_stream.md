@@ -18,6 +18,7 @@ Ticker pushed 24hr rollwing window statistics when updated.
 | Field           | Type         | Description                                                           |
 | :-------------- | :----------- | :-------------------------------------------------------------------- |
 | event           | string       | String literal for event name                                         |
+| eventID         | string  | event id for debug usage |
 | pair            | string       | Uppercase string underscore-delimited literal of a pair of currencies |
 | isBuyer         | boolean      |                                                                       |
 | priceChange24hr | string       |                                                                       |
@@ -33,6 +34,7 @@ GET wss://stream.bitopro.com:443/ws/v1/pub/tickers/BTC_TWD
 
 {
   "event": "TICKER",
+  "eventID": "dadf4ac1-665a-4f39-a139-ab95da102374",
   "pair": "BTC_TWD",
   "lastPrice": "1",
   "isBuyer": true,
@@ -51,6 +53,7 @@ GET wss://stream.bitopro.com:443/ws/v1/pub/tickers?pairs=BTC_TWD,BITO_ETH
 
 {
     "event": "TICKER",
+    "eventID": "dadf4ac1-665a-4f39-a139-ab95da102374",
     "pair": "BTC_TWD",
     "lastPrice": "1",
     "isBuyer": true,
@@ -63,6 +66,7 @@ GET wss://stream.bitopro.com:443/ws/v1/pub/tickers?pairs=BTC_TWD,BITO_ETH
   },
   {
     "event": "TICKER",
+    "eventID": "88038887-1de1-4521-b411-93440156cb41",
     "pair": "BITO_ETH",
     "lastPrice": "1",
     "isBuyer": true,
