@@ -80,7 +80,7 @@ For `GET` and `DELETE`, use **{identity: USER_EMAIL, nonce: TIMESTAMP}** as body
 | context | object  | payload   | 
 | :---------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------- |
 | `GET` request | `{ "identity": "support@bitoex.com", "nonce": 1554380909131}`                                               | `eyJpZGVudGl0eSI6InN1cHBvcnRAYml0b2V4LmNvbSIsIm5vbmNlIjoxNTU0MzgwOTA5MTMxfQ==`                                                     |
-| `POST` request, refer to [CreateOrder](./api/v3/private/create_an_order.md) | `{ "action": "BUY", "type": "limit", "price": "1.123456789", "amount": "666", "timestamp": 1554380909131 }` | `eyJhY3Rpb24iOiJCVVkiLCJhbW91bnQiOiI2NjYiLCJwcmljZSI6IjEuMTIzNDU2Nzg5IiwidGltZXN0YW1wIjoxNTU0MzgwOTA5MTMxLCJ0eXBlIjoibGltaXQifQ==` |
+| `POST` request, refer to [CreateOrder](./api/v3/private/create_an_order.md) | `{ "action": "BUY", "type": "limit", "price": "1.123456789", "amount": "666", "timestamp": 1554380909131 }` | `eyJhY3Rpb24iOiJCVVkiLCJ0eXBlIjoibGltaXQiLCJwcmljZSI6IjEuMTIzNDU2Nzg5IiwiYW1vdW50IjoiNjY2IiwidGltZXN0YW1wIjoxNTU0MzgwOTA5MTMxfQ==` |
 
 #### Signature Generation SOP
 The hex digest of an HMAC-SHA384 hash where the message is your **payload**, and use your **API SECRETE** to sign it. **[signature = HMAC-SHA384(payload, api-secret).digest('hex')]**
