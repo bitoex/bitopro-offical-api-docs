@@ -17,7 +17,6 @@ Order book pushed all data every second when updated. You can specifiy one or mo
 | 0    | Field     | Type         | Description                                                           |
 | :--- | :-------- | :----------- | :-------------------------------------------------------------------- |
 | 0    | event     | string       | String literal for event name                                         |
-| 0    | eventID           | string  | event id for debug usage |
 | 0    | pair      | string       | Uppercase string underscore-delimited literal of a pair of currencies |
 | 0    | bids      | object array |                                                                       |
 | 0    | asks      | object array |                                                                       |
@@ -36,7 +35,6 @@ GET wss://stream.bitopro.com:443/ws/v1/pub/order-books/BTC_TWD
 
 {
   "event": "ORDER_BOOK",
-  "eventID": "dadf4ac1-665a-4f39-a139-ab95da102374",
   "pair": "BTC_TWD",
   "bids": [
     {
@@ -68,7 +66,6 @@ GET wss://stream.bitopro.com:443/ws/v1/pub/order-books?pairs=BTC_TWD,ETH_TWD
 
 {
   "event": "ORDER_BOOK",
-  "eventID": "dadf4ac1-665a-4f39-a139-ab95da102374",
   "pair": "BTC_TWD",
   "bids": [
     {
@@ -93,7 +90,6 @@ GET wss://stream.bitopro.com:443/ws/v1/pub/order-books?pairs=BTC_TWD,ETH_TWD
 },
 {
   "event": "ORDER_BOOK",
-  "eventID": "dadf4ac1-665a-4f39-a139-ab95da102374",
   "pair": "ETH_TWD",
   "bids": [
     {
@@ -125,7 +121,6 @@ GET wss://stream.bitopro.com:443/ws/v1/pub/order-books/BTC_TWD:1
 
 {
   "event": "ORDER_BOOK",
-  "eventID": "dadf4ac1-665a-4f39-a139-ab95da102374",
   "pair": "BTC_TWD",
   "bids": [
     {
@@ -157,7 +152,6 @@ GET wss://stream.bitopro.com:443/ws/v1/pub/order-books?pairs=BTC_TWD:1,ETH_TWD:1
 
 {
     "event": "ORDER_BOOK",
-    "eventID": "dadf4ac1-665a-4f39-a139-ab95da102374",
     "pair": "BTC_TWD",
     "bids": [
       {
@@ -182,7 +176,6 @@ GET wss://stream.bitopro.com:443/ws/v1/pub/order-books?pairs=BTC_TWD:1,ETH_TWD:1
   },
   {
     "event": "ORDER_BOOK",
-    "eventID": "88038887-1de1-4521-b411-93440156cb41",
     "pair": "ETH_TWD",
     "bids": [
       {

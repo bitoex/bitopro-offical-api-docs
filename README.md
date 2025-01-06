@@ -169,17 +169,44 @@ note : Some of API has its own rate limit, please check api document. (e.g [Crea
 *   [List Withdraw Invoices Data](./api/v3/private/get_withdraw_invoices_data.md)
 *   [Get A Withdraw Invoice](./api/v3/private/get_an_withdraw_invoice_data.md)
 *   [Create Withdraw Invoice](./api/v3/private/create_an_withdraw_invoice.md)
+### Margin Trading Endpoints
+*   [Borrow](./api/v3/private/borrow.md)
+*   [Calculate AD Ratio](./api/v3/private/calculate_ad_ratio.md)
+*   [Get Borrow Provisioning](./api/v3/private/get_borrow_provisioning.md)
+*   [Get Margin Account Balance](./api/v3/private/get_margin_acccount_balance.md)
+*   [Get Mark Price](./api/v3/private/get_mark_price.md)
+*   [List User Borrow](./api/v3/private/list_user_borrow.md)
+*   [List User Transfers](./api/v3/private/list_user_transfers.md)
+*   [List User Interests](./api/v3/private/list_user_interests.md)
+*   [List User Liquidations](./api/v3/private/list_user_liquidations.md)
+*   [List User Repays](./api/v3/private/list_user_repays.md)
+*   [Margin Cancel All Orders](./api/v3/private/margin_cancel_all_orders.md)
+*   [Margin Cancel An Order](./api/v3/private/margin_cancel_an_order.md)
+*   [Margin Cancel Batch Orders](./api/v3/private/margin_cancel_batch_orders.md)
+*   [Margin Create An Order](./api/v3/private/margin_create_an_order.md)
+*   [Margin Create Batch Orders](./api/v3/private/margin_create_batch_orders.md)
+*   [Margin Get An Order Data](./api/v3/private/margin_get_an_order_data.md)
+*   [Margin Get Open Orders Data](./api/v3/private/margin_get_open_orders_data.md)
+*   [Margin Get Orders Data](./api/v3/private/margin_get_orders_data.md)
+*   [Margin Get Trades Data](./api/v3/private/margin_get_trades_data.md)
+*   [Repay](./api/v3/private/repay.md)
+*   [Transfer](./api/v3/private/transfer.md)
 
 ## Websocket Stream List
 ## Public WebSocket Stream
 *   [OrderBook Stream](./ws/public/order_book_stream.md)
 *   [Ticker Data Stream](./ws/public/ticker_stream.md)
 *   [Trade Stream](./ws/public/trade_stream.md)
+*   [Margin Mark Price Stream](./ws/public/margin_mark-price_stream.md)
 ## Private WebSocket Stream
 *   [Open Orders Stream](./ws/private/open_orders_stream.md)
 *   [History Orders Stream](./ws/private/history_orders_stream.md)
 *   [Account Balance Stream](./ws/private/user_balance_stream.md)
 *   [User Trade Stream](./ws/private/user_trade_stream.md)
+*   [Margin Account Info Stream](./ws/private/margin_account_info_stream.md)
+*   [Margin Active Orders Stream](./ws/private/margin_active_orders_stream.md)
+*   [Margin History Orders Stream](./ws/private/margin_history_orders_stream.md)
+*   [Margin User Trades Stream](./ws/private/margin_user_trades_stream.md)
 
 
 # Contact us

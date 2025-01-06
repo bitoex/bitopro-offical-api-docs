@@ -24,7 +24,6 @@ You can find how to create payload and signature from [authentication document](
 | 0    | Field     | Type    | Description                                     |
 | :--- | :-------- | :------ | :---------------------------------------------- |
 | 0    | event     | string  | String literal for event name                   |
-| 0    | eventID           | string  | event id for debug usage |
 | 0    | timestamp | integer | Unix Timestamp in milliseconds (seconds * 1000) |
 | 0    | datetime  | string  | ISO8601 datetime string with milliseconds       |
 | 1    | currency  | string  | uppercase string                                |
@@ -39,7 +38,6 @@ You can find how to create payload and signature from [authentication document](
 // first message for all currencies
 {
     "event": "ACCOUNT_BALANCE",
-    "eventID": "dadf4ac1-665a-4f39-a139-ab95da102374",
     "timestamp": 1639553303365,
     "datetime": "2021-12-15T07:28:23.365Z",
     "data": {
@@ -126,7 +124,6 @@ You can find how to create payload and signature from [authentication document](
 // second message for updated balance
 {
     "event": "ACCOUNT_BALANCE",
-    "eventID": "88038887-1de1-4521-b411-93440156cb41",
     "timestamp": 1639553303365,
     "datetime": "2021-12-15T07:28:23.365Z",
     "data": {

@@ -21,7 +21,6 @@ You can find how to create payload and signature from [authentication document](
 | 0    | Field             | Type    | Description                                                                         |
 | :--- | :---------------- | :------ | :---------------------------------------------------------------------------------- |
 | 0    | event             | string  | String literal for event name                                                       |
-| 0    | eventID           | string  | event id for debug usage |
 | 0    | timestamp         | integer | Unix Timestamp in milliseconds (seconds * 1000)                                     |
 | 0    | datetime          | string  | ISO8601 datetime string with milliseconds                                           |
 | 1    | side              | string  | ask (i.e sell) or bid (ie buy)                                                                         |
@@ -43,7 +42,6 @@ You can find how to create payload and signature from [authentication document](
 ```javascript
 {
     "event": "USER_TRADE",
-    "eventID": "dadf4ac1-665a-4f39-a139-ab95da102374",
     "timestamp": 1694667358782,
     "datetime": "2023-09-14T12:55:58.782Z",
     "data": {
