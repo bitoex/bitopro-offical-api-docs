@@ -1,7 +1,7 @@
 # Get An Order Data
 
 Get an order information by given order id.
-
+History is available only for the past 90 days.
 
 # Api Request
 **`GET` /orders/{pair}/{orderId}**

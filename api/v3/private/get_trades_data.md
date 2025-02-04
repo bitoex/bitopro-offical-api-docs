@@ -1,5 +1,7 @@
 # List Trades
 
+History is available only for the past 90 days.
+
 # Api Request
 **`GET` /orders/trades/{pair}**
 
