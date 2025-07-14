@@ -47,7 +47,8 @@ Get VIP trading fee rates, order fees, and limitations. Learn about withdrawal f
             "maximumTradingAmount": "20000",
             "dailyCumulativeMaximumAmount": "50000",
             "remarks": "",
-            "protocol": "main"
+            "protocol": "main",
+            "twdWithdrawMonthly": null
         },
         {
             "currency": "APE (ETH-ERC20)",
@@ -56,7 +57,38 @@ Get VIP trading fee rates, order fees, and limitations. Learn about withdrawal f
             "maximumTradingAmount": "72700",
             "dailyCumulativeMaximumAmount": "727000",
             "remarks": "Suspended withdraw",
-            "protocol": "erc20"
+            "protocol": "erc20",
+            "twdWithdrawMonthly": null
+        },
+        {
+            "currency": "TRX",
+            "fee": "75",
+            "minimumTradingAmount": "300",
+            "maximumTradingAmount": "200000",
+            "dailyCumulativeMaximumAmount": "500000",
+            "remarks": "",
+            "protocol": "main",
+            "twdWithdrawMonthly": null
+        },
+        {
+            "currency": "TWD",
+            "fee": "30",
+            "minimumTradingAmount": "100",
+            "maximumTradingAmount": "2000000",
+            "dailyCumulativeMaximumAmount": "2000000",
+            "remarks": "",
+            "protocol": "main",
+            "twdWithdrawMonthly": "5000000"
+        },
+        {
+            "currency": "USDC (Binance Smart Chain)",
+            "fee": "0.057",
+            "minimumTradingAmount": "1",
+            "maximumTradingAmount": "50000",
+            "dailyCumulativeMaximumAmount": "100000",
+            "remarks": "",
+            "protocol": "bsc",
+            "twdWithdrawMonthly": null
         }
     ],
     "cryptocurrencyDepositFeeAndConfirmation": [
@@ -105,4 +137,20 @@ Get VIP trading fee rates, order fees, and limitations. Learn about withdrawal f
     ]
 }
 ```
+
+## Response Fields
+
+### restrictionsOfWithdrawalFees
+
+| Field | Type | Description |
+|-------|------|-------------|
+| currency | string | The currency code |
+| fee | string | Withdrawal fee amount |
+| minimumTradingAmount | string | Minimum withdrawal amount |
+| maximumTradingAmount | string | Maximum withdrawal amount per transaction |
+| dailyCumulativeMaximumAmount | string | Daily cumulative maximum withdrawal amount |
+| remarks | string | Additional remarks or notes |
+| protocol | string | Protocol used for the withdrawal |
+| twdWithdrawMonthly | string/null | Monthly TWD withdrawal limit. Only has value when currency is "TWD", null for other currencies |
+
 [Back](../summary.md)
