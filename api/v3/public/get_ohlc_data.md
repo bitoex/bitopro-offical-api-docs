@@ -15,6 +15,8 @@ Get open, high, low, close data in a period
 |        |      | from       | int64  | Yes      | Start time in unix timestamp.                                                                                             |         |                                                   | 1550822974 |
 |        |      | to         | int64  | Yes      | End time in unix timestamp.                                                                                               |         |                                                   | 1566375034 |
 
+⚠️ Note: 1m and 5m resolution only provide data for the last 365 days
+
 # Api Response
 
 **Response Example:**
