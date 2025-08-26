@@ -19,10 +19,12 @@ You can find how to create payload and signature from [authentication document](
 |                     |          | limit          | int64  | No       | The limit for the response.                                                                                                              | 20                             | min:1, max:100 | 30                     |
 |                     |          | id             | string | No       | The id of the first data in the response. It can serve as an offset when it's sent as an id of the last data from the previous response. If this parameter is included, the response will comprise data with IDs less than or equal to the id.  |                                |                | 3255779687             |
 |                     |          | statuses       | string | No       | The status of the withdraw. It is multiple values that are concatenated by a comma.                                                      |                                |                | CANCELLED,WAIT_PROCESS |
+|                     |          | txID           | string | No       | The transaction ID to filter withdrawals. Not supported for fiat currencies (TWD, USD). Note: txID is not unique and may return multiple records. |                                |                | 414b4d22c07d815834213d83f368... |
 
 - The start timestamp must be less than the end timestamp and the time between the start and end timestamp must be less and equal to 90 days.
 - The withdraw cryptocurrency status could be `PROCESSING`,`COMPLETE`,`EXPIRED`,`INVALID`,`WAIT_PROCESS`,`WAIT_CONFIRMATION`,`EMAIL_VERIFICATION`,`CANCELLED`.
 - The withdraw twd status could be `PROCESSING`,`COMPLETE`,`INVALID`,`WAIT_PROCESS`,`EMAIL_VERIFICATION`,`CANCELLED`, `FAILED`.
+- **Note**: The `txID` parameter is only supported for cryptocurrency withdrawals and is not available for fiat currencies (TWD, USD). The txID is not unique and may return multiple records.
 
 
 # Api Response
